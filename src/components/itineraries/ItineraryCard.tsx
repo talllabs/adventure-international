@@ -35,7 +35,7 @@ export function ItineraryCard({ itinerary }: ItineraryCardProps) {
             <span key={theme} className="text-xs text-gold tracking-widest uppercase">{theme}</span>
           ))}
         </div>
-        <h3 className="font-serif text-xl text-forest group-hover:text-gold transition-colors mb-1">
+        <h3 className="font-serif text-xl text-white group-hover:text-gold transition-colors mb-1">
           {itinerary.title}
         </h3>
         <p className="text-charcoal-soft text-sm">{itinerary.subtitle}</p>

@@ -1,43 +1,46 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { NAV_LINKS } from "@/lib/constants";
-import { Button } from "@/components/ui/Button";
 import { NavMobile } from "./NavMobile";
-import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 
+const NAV_LINKS = [
+  {
+    label: "Signature Expeditions",
+    href: "/itineraries",
+  },
+  {
+    label: "Destinations",
+    href: "/destinations",
+    children: [
+      { label: "Africa", href: "/destinations?region=africa" },
+      { label: "Asia", href: "/destinations?region=asia" },
+      { label: "South America", href: "/destinations?region=south-america" },
+      { label: "Central America", href: "/destinations?region=central-america" },
+      { label: "Europe", href: "/destinations?region=europe" },
+    ],
+  },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "/contact" },
+  { label: "Blog", href: "/journal" },
+];
+
 export function Nav() {
-  const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
   return (
     <>
-      <nav
-        className={cn(
-          "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-          scrolled
-            ? "bg-forest shadow-lg py-3"
-            : "bg-transparent py-5"
-        )}
-      >
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-black py-4 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex flex-col items-start">
-            <span className="font-serif text-ivory text-xl leading-none tracking-wider">
-              Adventure
-            </span>
-            <span className="font-serif text-gold text-xl leading-none tracking-widest">
-              International
-            </span>
+          <Link href="/" className="flex items-center">
+            <img
+              src="https://adventure-international.com/wp-content/uploads/2018/07/ADVENTURE-INTERNATIONAL-logo.svg"
+              alt="Adventure International"
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -51,18 +54,18 @@ export function Nav() {
               >
                 <Link
                   href={link.href}
-                  className="text-ivory/80 hover:text-gold text-sm tracking-widest uppercase transition-colors"
+                  className="text-white/80 hover:text-gold text-sm tracking-widest uppercase transition-colors"
                 >
                   {link.label}
                 </Link>
                 {link.children && activeDropdown === link.label && (
-                  <div className="absolute top-full left-0 pt-2 w-48">
-                    <div className="bg-forest-dark border border-gold/20 py-2">
+                  <div className="absolute top-full left-0 pt-2 w-56">
+                    <div className="bg-black border border-gold/20 py-2">
                       {link.children.map((child) => (
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2 text-ivory/70 hover:text-gold hover:bg-forest text-sm transition-colors"
+                          className="block px-4 py-2 text-white/70 hover:text-gold hover:bg-white/5 text-sm transition-colors"
                         >
                           {child.label}
                         </Link>
@@ -74,16 +77,9 @@ export function Nav() {
             ))}
           </div>
 
-          {/* CTA */}
-          <div className="hidden lg:flex items-center gap-4">
-            <Button href="/contact" variant="primary" className="text-xs">
-              Plan Your Journey
-            </Button>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-ivory"
+            className="lg:hidden text-white"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >

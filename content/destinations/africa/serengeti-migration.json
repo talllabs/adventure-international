@@ -4,14 +4,17 @@
   "name": "Serengeti Migration",
   "country": "Tanzania",
   "tagline": "Witness the Greatest Wildlife Show on Earth",
-  "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
-    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200",
-    "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200"
+    "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200"
   ],
   "intro": "The Serengeti is Africa's most iconic wilderness — 30,000 square kilometres of open savanna where over two million wildebeest, zebra, and gazelle make an annual pilgrimage in one of nature's most dramatic spectacles. Beyond the migration, the Serengeti's resident predator populations are among the densest on earth.",
-  "themes": ["Safari", "Big Cats", "Conservation", "Wildlife"],
+  "themes": [
+    "Safari",
+    "Big Cats",
+    "Conservation",
+    "Wildlife"
+  ],
   "signatureExperiences": [
     {
       "title": "River Crossing Viewings",
@@ -51,7 +54,9 @@
       "notes": "The open plains make cheetah sightings and hunt observations more reliable here than almost anywhere else in Africa."
     }
   ],
-  "sampleItineraries": ["great-migration-classic"],
+  "sampleItineraries": [
+    "great-migration-classic"
+  ],
   "lodging": [
     {
       "name": "Singita Grumeti",
@@ -67,8 +72,13 @@
     }
   ],
   "bestTimeToVisit": "June–October for the river crossings; January–March for calving season in the southern Serengeti",
-  "relatedDestinations": ["okavango-delta", "costa-rica-rainforest"],
-  "relatedJournalArticles": ["gorillas-in-the-mist"],
+  "relatedDestinations": [
+    "okavango-delta",
+    "costa-rica-rainforest"
+  ],
+  "relatedJournalArticles": [
+    "gorillas-in-the-mist"
+  ],
   "meta": {
     "title": "Serengeti Migration Safari | Adventure International",
     "description": "Witness the greatest wildlife spectacle on earth — the Great Migration across Tanzania's Serengeti. Bespoke luxury safaris with Adventure International."

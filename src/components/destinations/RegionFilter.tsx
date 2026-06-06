@@ -17,7 +17,7 @@ function RegionFilterInner({ activeRegion }: { activeRegion?: string }) {
   }
 
   return (
-    <div className="bg-ivory border-b border-ivory-deep sticky top-16 z-40">
+    <div className="bg-[#0a0a0a] border-b border-white/10 sticky top-16 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide">
           <button

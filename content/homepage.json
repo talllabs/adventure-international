@@ -2,7 +2,7 @@
   "hero": {
     "vimeoId": "76979871",
     "headline": "Adventures For A Lifetime",
-    "subheadline": "Bespoke Expeditions. Extraordinary Access. Unforgettable Journeys.",
+    "subheadline": "Private Luxury Expeditions to the World's Most Extraordinary Places",
     "ctaLabel": "Plan Your Journey",
     "ctaHref": "/contact"
   },
@@ -28,21 +28,21 @@
   ],
   "editorialSections": [
     {
-      "label": "Our Philosophy",
-      "headline": "Beyond the Ordinary",
-      "body": "Adventure International was founded on a singular belief: that travel should transform you. We craft expeditions that take you beyond the guidebook, beyond the tourist trail, and into the living heart of the world's most extraordinary wild places.",
-      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200",
-      "imageAlt": "Elephant herd at golden hour on the African savanna",
+      "label": "Who We Are",
+      "headline": "Private Luxury Expeditions",
+      "body": "Adventure International designs unique journeys to the world's most extraordinary places, tailored from the knowledge of true adventure seekers and travel enthusiasts. We focus on supporting the travel industry with outfitting solutions in Africa, Asia, and the Americas — where we have our own in-country operations for trekking and adventure programs. Over a decade of experience curating trips ensures that clients are very well taken care of with highly qualified and trained guides.",
+      "image": "https://images.unsplash.com/photo-1589308701970-9cd89ef0b77c?w=1200",
+      "imageAlt": "Mount Kilimanjaro at sunrise",
       "ctaLabel": "Our Story",
       "ctaHref": "/about"
     },
     {
-      "label": "Expert Guides",
-      "headline": "Curated By Those Who Know",
-      "body": "Every itinerary is crafted by our team of seasoned naturalists, adventure guides, and travel specialists who have spent years — sometimes decades — in the field. Their relationships with local communities and conservation partners give our guests access that simply cannot be booked.",
-      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
-      "imageAlt": "Safari guide with binoculars surveying the landscape",
-      "ctaLabel": "Meet the Team",
+      "label": "Our Philosophy",
+      "headline": "Sustainable, Ethical, Extraordinary",
+      "body": "We combine luxury adventure travel and local communities into a symbiotic, life-changing experience for both the traveler and the local people. Our on-the-ground approach means our owners and managers are constantly on reconnaissance for new trips, our trip leaders personally guide private groups, and our most trusted local guides escort families and small groups on their next departure.",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200",
+      "imageAlt": "Safari elephants at golden hour on the African savanna",
+      "ctaLabel": "Why AI",
       "ctaHref": "/about"
     }
   ],

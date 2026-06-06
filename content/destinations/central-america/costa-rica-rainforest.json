@@ -4,13 +4,17 @@
   "name": "Costa Rica Rainforest",
   "country": "Costa Rica",
   "tagline": "Biodiversity Hotspot — Where Two Oceans Meet",
-  "heroImage": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200",
-    "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1200"
+    "https://images.unsplash.com/photo-1518259102261-b40117eabbc9?w=1200"
   ],
   "intro": "Costa Rica packs extraordinary biodiversity into a small country — covering less than 0.1% of the Earth's surface, it contains nearly 5% of all known species. From misty cloud forests to Pacific surf breaks and Caribbean mangroves, it offers a stunning combination of wildlife encounters and adventure experiences.",
-  "themes": ["Surf & Turf", "Conservation", "Wildlife", "Family"],
+  "themes": [
+    "Surf & Turf",
+    "Conservation",
+    "Wildlife",
+    "Family"
+  ],
   "signatureExperiences": [
     {
       "title": "Corcovado Expedition",
@@ -66,8 +70,13 @@
     }
   ],
   "bestTimeToVisit": "December–April (dry season on Pacific coast); September–October for turtle nesting",
-  "relatedDestinations": ["serengeti-migration", "patagonia-wilderness"],
-  "relatedJournalArticles": ["surfing-baja-peninsula"],
+  "relatedDestinations": [
+    "serengeti-migration",
+    "patagonia-wilderness"
+  ],
+  "relatedJournalArticles": [
+    "surfing-baja-peninsula"
+  ],
   "meta": {
     "title": "Costa Rica Rainforest Expeditions | Adventure International",
     "description": "Discover Costa Rica's extraordinary biodiversity — surf the Pacific, explore rainforests, and encounter rare wildlife with Adventure International."

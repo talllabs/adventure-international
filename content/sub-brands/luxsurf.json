@@ -3,10 +3,16 @@
   "name": "Luxsurf",
   "tagline": "The World's Best Waves. Without Compromise.",
   "description": "Luxsurf is Adventure International's premium surf travel brand, delivering access to the world's finest waves — Indonesian perfection, Maldivian atolls, Mexican point breaks, Fijian barrels — combined with exceptional accommodation, expert guiding, and the kind of logistics that take all the stress out of serious surf travel.",
-  "heroImage": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200",
   "accentColor": "#c9a84c",
-  "themes": ["Surf & Turf", "Luxsurf", "Family"],
-  "featuredDestinations": ["costa-rica-rainforest"],
+  "themes": [
+    "Surf & Turf",
+    "Luxsurf",
+    "Family"
+  ],
+  "featuredDestinations": [
+    "costa-rica-rainforest"
+  ],
   "featuredItineraries": [],
   "sections": [
     {

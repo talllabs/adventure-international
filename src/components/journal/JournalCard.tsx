@@ -33,7 +33,7 @@ export function JournalCard({ article, variant = "standard" }: JournalCardProps)
             <span key={theme} className="text-xs text-gold tracking-widest uppercase">{theme}</span>
           ))}
         </div>
-        <h2 className="font-serif text-3xl md:text-4xl text-forest group-hover:text-gold transition-colors mb-3 font-light">
+        <h2 className="font-serif text-3xl md:text-4xl text-white group-hover:text-gold transition-colors mb-3 font-light">
           {article.title}
         </h2>
         <p className="text-charcoal-soft leading-relaxed mb-4">{article.excerpt}</p>
@@ -62,7 +62,7 @@ export function JournalCard({ article, variant = "standard" }: JournalCardProps)
           <span key={theme} className="text-xs text-gold tracking-widest uppercase">{theme}</span>
         ))}
       </div>
-      <h3 className="font-serif text-xl text-forest group-hover:text-gold transition-colors mb-2 font-light">
+      <h3 className="font-serif text-xl text-white group-hover:text-gold transition-colors mb-2 font-light">
         {article.title}
       </h3>
       <p className="text-sm text-charcoal-soft line-clamp-2">{article.excerpt}</p>

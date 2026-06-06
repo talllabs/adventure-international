@@ -1,52 +1,30 @@
 {
-  "brandStory": {
-    "headline": "Born From a Love of Wild Places",
-    "body": "Adventure International was founded in 1998 by naturalist and explorer Marcus Webb after two decades leading expeditions across Africa, South America, and Southeast Asia. What began as a small operation running bespoke African safaris has grown into a global luxury expedition company — but our guiding principle has never changed: every journey we craft must be exceptional, responsible, and deeply personal.",
-    "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200"
+  "headline": "A Small Team of Specialists",
+  "intro": "Adventure International is a small team of adventure specialists — destination managers, expedition guides, and adventure outfitters. With guides, leaders, and owners in some of the most incredible locations in the world, living and working in destination countries gives us the ability to deliver exceptional adventures from some of the highest peaks in the Himalaya to the plains of East Africa and the snow-capped summit of Mt Kilimanjaro.",
+  "philosophy": "Adventure International specializes in adventure travel because we believe in the intrinsic value of traveling to natural environments or remote locations with the specific purpose of active physical participation and exploration of a new sensory experience. Our guiding philosophy is to share this idea with our guests in ways that also improve the welfare of local people.",
+  "whyUs": "AI is a premier adventure travel specialist with offices in the US, Canada, Holland, East Africa, Peru, and Nepal. We run our own operations in East Africa, the Himalayas, and South America. Our authenticity and expertise comes from our extensive background as guides, trip leaders, and managers — over a decade of experience running safe and professional adventure trips into remote wilderness areas and the world's highest peaks.",
+  "testimonial": {
+    "quote": "Adventure International is one of our ideal Partners for Responsible Travel meeting our guidelines for proper porter treatment consistently in all areas. Their commitment to fair and ethical practices, as well as provision of education to their crew, is exemplary.",
+    "attribution": "Kilimanjaro Porters Assistance Project (KPAP)"
   },
-  "expertisePillars": [
-    {
-      "icon": "compass",
-      "title": "Unrivaled Access",
-      "description": "Decades of relationships with private conservancies, local communities, and conservation organizations grant our guests access to places most travelers never see."
-    },
-    {
-      "icon": "shield",
-      "title": "Conservation First",
-      "description": "A portion of every journey funds direct conservation efforts in the destinations we visit. We believe luxury travel should actively protect the wild places it celebrates."
-    },
-    {
-      "icon": "users",
-      "title": "Small Groups Only",
-      "description": "We cap most expeditions at 8–12 guests, ensuring an intimate, personalized experience and minimal environmental footprint."
-    },
-    {
-      "icon": "star",
-      "title": "Extraordinary Expertise",
-      "description": "Every itinerary is designed and guided by specialists with deep field experience — naturalists, climbers, surfers, and cultural experts who are passionate about their regions."
-    }
-  ],
   "team": [
     {
-      "name": "Marcus Webb",
-      "role": "Founder & Lead Naturalist",
-      "bio": "Marcus has spent over 30 years leading expeditions across six continents. A trained wildlife biologist and passionate photographer, he designed Adventure International's foundational approach to nature-first travel.",
-      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
-      "expertise": ["Africa", "Wildlife Biology", "Conservation Photography"]
+      "name": "Frank Castro",
+      "role": "Co-Founder & Adventure Specialist",
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400",
+      "bio": "Frank grew up in Malibu, California and has spent much of his life traveling and working with management teams on film productions, restaurants, and lodges in Los Angeles, Spain, South Africa, and Tanzania. After managing a leading luxury safari lodge in Tanzania, Frank joined a mountain climbing outfitter as the International Sales & Marketing Director before partnering to found Adventure International. He has climbed Kilimanjaro, Mt Kenya, Mt Meru, and Mt Whitney, among others."
     },
     {
-      "name": "Sofia Reyes",
-      "role": "Director of South American Expeditions",
-      "bio": "Born in Santiago, Chile, Sofia has guided trekkers through Patagonia for 15 years. She leads all Adventure International's South American programs and maintains deep connections with Patagonian conservation trusts.",
-      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400",
-      "expertise": ["Patagonia", "High-Altitude Trekking", "Conservation"]
-    },
-    {
-      "name": "James Ochieng",
-      "role": "Head of East African Operations",
-      "bio": "A third-generation Kenyan guide, James has an encyclopedic knowledge of East African wildlife and ecosystems. He oversees all Kenya, Tanzania, and Uganda programs and personally guides the Great Migration Classic.",
-      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
-      "expertise": ["Kenya", "Tanzania", "Primatology", "Bird Watching"]
+      "name": "Ben McCullough",
+      "role": "General Manager, Tanzania Operations",
+      "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400",
+      "bio": "Ben is passionate about epic adventures, ethical travel, and sustainable tourism. Born and raised in South West England, he has travelled and worked across South America and East Africa. A qualified Wilderness First Responder with significant high altitude trekking experience, Ben became General Manager of the Tanzanian operation and made Tanzania his home. He has guided groups across the European Alps, the Himalaya, Peru, Ecuador, North Africa, and several East African peaks."
     }
+  ],
+  "expertisePillars": [
+    { "title": "Expert Guides", "body": "Elite wilderness first responders with decades of field experience and intimate knowledge of every destination." },
+    { "title": "Safety First", "body": "Rigorous safety protocols, bi-annual training, and comprehensive health monitoring systems on every expedition." },
+    { "title": "Sustainable Travel", "body": "The first company in East Africa to participate in carbon offsets; strict trash-in-trash-out principles throughout." },
+    { "title": "Local Partnerships", "body": "Deep community relationships that create meaningful employment, training, and positive impact in every region." }
   ]
 }
