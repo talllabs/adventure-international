@@ -58,8 +58,8 @@ export function InquiryForm() {
     return (
       <div className="flex flex-col items-center justify-center py-20 text-center">
         <CheckCircle size={48} className="text-gold mb-4" />
-        <h3 className="font-serif text-3xl text-white mb-3">Thank You</h3>
-        <p className="text-white/60 leading-relaxed max-w-sm">
+        <h3 className="font-serif text-3xl text-[#111111] mb-3">Thank You</h3>
+        <p className="text-[#5a5a5a] leading-relaxed max-w-sm">
           We&apos;ve received your inquiry and one of our expedition specialists will be in touch within 24 hours.
         </p>
       </div>
@@ -120,7 +120,7 @@ export function InquiryForm() {
 
       {/* Areas checkboxes */}
       <div>
-        <p className="text-xs tracking-widest uppercase text-white/60 mb-3">What areas are you interested in visiting?</p>
+        <p className="text-xs tracking-widest uppercase text-[#5a5a5a] mb-3">What areas are you interested in visiting?</p>
         <div className="grid grid-cols-2 gap-3">
           {AREAS.map((area) => (
             <label key={area.value} className="flex items-center gap-2 cursor-pointer">
@@ -130,7 +130,7 @@ export function InquiryForm() {
                 {...register("areas")}
                 className="accent-gold"
               />
-              <span className="text-sm text-white/70">{area.label}</span>
+              <span className="text-sm text-[#5a5a5a]">{area.label}</span>
             </label>
           ))}
         </div>

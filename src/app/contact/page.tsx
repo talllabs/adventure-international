@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div className="pt-24">
+      {/* Hero — black */}
       <div className="bg-[#0a0a0a] py-20 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <SectionLabel className="justify-center mb-6" light>Get in Touch</SectionLabel>
@@ -18,55 +19,62 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Editorial copy */}
-          <div>
-            <SectionLabel className="mb-6">Let&apos;s Talk</SectionLabel>
-            <h2 className="font-serif text-4xl text-white font-light mb-6">
-              Every Great Expedition Begins Here
-            </h2>
-            <p className="text-white/60 leading-relaxed mb-8 text-lg">
-              Our expedition specialists have deep first-hand knowledge of every destination we offer. Whether you know exactly where you want to go or are seeking guidance, we&apos;re here to design the journey of a lifetime.
-            </p>
-            <p className="text-white/60 leading-relaxed mb-12">
-              Fill out the form and one of our team will be in touch within 24 hours to begin the conversation.
-            </p>
+      {/* Content — white */}
+      <div className="bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            {/* Editorial copy */}
+            <div>
+              <SectionLabel className="mb-6">Let&apos;s Talk</SectionLabel>
+              <h2 className="font-serif text-4xl text-[#111111] font-light mb-6">
+                Every Great Expedition Begins Here
+              </h2>
+              <p className="text-[#5a5a5a] leading-relaxed mb-8 text-lg">
+                Our expedition specialists have deep first-hand knowledge of every destination we offer. Whether you know exactly where you want to go or are seeking guidance, we&apos;re here to design the journey of a lifetime.
+              </p>
+              <p className="text-[#5a5a5a] leading-relaxed mb-12">
+                Fill out the form and one of our team will be in touch within 24 hours to begin the conversation. If you need an urgent response, please indicate so in the additional info box below.
+              </p>
 
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Mail size={18} className="text-gold" />
+              <div className="space-y-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gold/10 flex items-center justify-center flex-shrink-0 border border-gold/30">
+                    <Mail size={18} className="text-gold" />
+                  </div>
+                  <div>
+                    <p className="text-xs tracking-widest uppercase text-gold mb-1">Email</p>
+                    <a href="mailto:info@adventure-international.com" className="text-[#5a5a5a] hover:text-gold transition-colors">
+                      info@adventure-international.com
+                    </a>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs tracking-widest uppercase text-gold mb-1">Email</p>
-                  <p className="text-white/60">info@adventure-international.com</p>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gold/10 flex items-center justify-center flex-shrink-0 border border-gold/30">
+                    <Phone size={18} className="text-gold" />
+                  </div>
+                  <div>
+                    <p className="text-xs tracking-widest uppercase text-gold mb-1">Phone</p>
+                    <a href="tel:8886643865" className="text-[#5a5a5a] hover:text-gold transition-colors">
+                      888-664-3865
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <Phone size={18} className="text-gold" />
-                </div>
-                <div>
-                  <p className="text-xs tracking-widest uppercase text-gold mb-1">Phone</p>
-                  <p className="text-white/60">888-664-3865</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center flex-shrink-0">
-                  <MapPin size={18} className="text-gold" />
-                </div>
-                <div>
-                  <p className="text-xs tracking-widest uppercase text-gold mb-1">Office</p>
-                  <p className="text-white/60">US, Canada, Holland, East Africa, Peru, Nepal</p>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-gold/10 flex items-center justify-center flex-shrink-0 border border-gold/30">
+                    <MapPin size={18} className="text-gold" />
+                  </div>
+                  <div>
+                    <p className="text-xs tracking-widest uppercase text-gold mb-1">Offices</p>
+                    <p className="text-[#5a5a5a]">US · Canada · Holland · East Africa · Peru · Nepal</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Form */}
-          <div>
-            <InquiryForm />
+            {/* Form */}
+            <div>
+              <InquiryForm />
+            </div>
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ interface EditorialStoryProps {
 
 export function EditorialStory({ sections }: EditorialStoryProps) {
   return (
-    <section className="py-24 bg-[#0a0a0a]">
+    <section className="py-24 bg-white">
       {sections.map((section, index) => (
         <div
           key={index}
@@ -42,10 +42,10 @@ export function EditorialStory({ sections }: EditorialStoryProps) {
           <FadeInUp delay={0.2}>
             <div className="max-w-lg">
               <SectionLabel className="mb-6">{section.label}</SectionLabel>
-              <h2 className="font-serif text-4xl md:text-5xl text-white mb-6 font-light leading-tight">
+              <h2 className="font-serif text-4xl md:text-5xl text-[#111111] mb-6 font-light leading-tight">
                 {section.headline}
               </h2>
-              <p className="text-white/60 leading-relaxed mb-8 text-lg">
+              <p className="text-[#5a5a5a] leading-relaxed mb-8 text-lg">
                 {section.body}
               </p>
               {section.ctaLabel && section.ctaHref && (
