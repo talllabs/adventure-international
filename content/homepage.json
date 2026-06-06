@@ -1,0 +1,64 @@
+{
+  "hero": {
+    "vimeoId": "76979871",
+    "headline": "Adventures For A Lifetime",
+    "subheadline": "Bespoke Expeditions. Extraordinary Access. Unforgettable Journeys.",
+    "ctaLabel": "Plan Your Journey",
+    "ctaHref": "/contact"
+  },
+  "featuredDestinations": [
+    "serengeti-migration",
+    "okavango-delta",
+    "patagonia-wilderness",
+    "costa-rica-rainforest",
+    "himalayan-kingdoms",
+    "norwegian-fjords"
+  ],
+  "experienceThemes": [
+    "Big Cats",
+    "Glamping",
+    "Safari",
+    "Trekking",
+    "Surf & Turf",
+    "Conservation",
+    "Peaks & Wildlife",
+    "Family",
+    "Helicopter",
+    "Luxsurf"
+  ],
+  "editorialSections": [
+    {
+      "label": "Our Philosophy",
+      "headline": "Beyond the Ordinary",
+      "body": "Adventure International was founded on a singular belief: that travel should transform you. We craft expeditions that take you beyond the guidebook, beyond the tourist trail, and into the living heart of the world's most extraordinary wild places.",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200",
+      "imageAlt": "Elephant herd at golden hour on the African savanna",
+      "ctaLabel": "Our Story",
+      "ctaHref": "/about"
+    },
+    {
+      "label": "Expert Guides",
+      "headline": "Curated By Those Who Know",
+      "body": "Every itinerary is crafted by our team of seasoned naturalists, adventure guides, and travel specialists who have spent years — sometimes decades — in the field. Their relationships with local communities and conservation partners give our guests access that simply cannot be booked.",
+      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
+      "imageAlt": "Safari guide with binoculars surveying the landscape",
+      "ctaLabel": "Meet the Team",
+      "ctaHref": "/about"
+    }
+  ],
+  "signatureItineraries": [
+    "great-migration-classic",
+    "okavango-fly-camp",
+    "patagonia-overland"
+  ],
+  "journalPreviews": [
+    "wild-heart-of-botswana",
+    "surfing-baja-peninsula",
+    "gorillas-in-the-mist"
+  ],
+  "subBrands": [
+    "california-journeys",
+    "northern-journeys",
+    "luxsurf"
+  ]
+}

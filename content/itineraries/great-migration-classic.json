@@ -1,0 +1,151 @@
+{
+  "slug": "great-migration-classic",
+  "title": "The Great Migration Classic",
+  "subtitle": "Ten Days in the Heart of the Serengeti",
+  "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
+    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200",
+    "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200",
+    "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=1200"
+  ],
+  "destinations": ["serengeti-migration"],
+  "themes": ["Safari", "Big Cats", "Conservation"],
+  "overview": "The Great Migration Classic is our signature East African expedition — a carefully choreographed 10-day journey through Tanzania's greatest wilderness areas, timed to coincide with the wildebeest migration and designed for guests who want an exceptional safari without compromise.",
+  "duration": 10,
+  "groupSize": "2–8 guests",
+  "physicalRating": "Easy to Moderate",
+  "highlights": [
+    "Witness a wildebeest river crossing at the Mara River",
+    "Track lion prides and cheetah families on the open plains",
+    "Dawn balloon flight over the migration with champagne breakfast",
+    "Two private conservancy game drives away from park crowds",
+    "Visit to a Maasai community partnership village"
+  ],
+  "routeMapImage": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800",
+  "days": [
+    {
+      "day": 1,
+      "location": "Arusha, Tanzania",
+      "title": "Arrival in Arusha",
+      "description": "Arrive at Kilimanjaro International Airport where our team meets you and transfers you to your hotel in Arusha. An evening briefing covers the journey ahead, followed by a welcome dinner featuring local cuisine.",
+      "image": null
+    },
+    {
+      "day": 2,
+      "location": "Tarangire National Park",
+      "title": "Tarangire — Land of Giants",
+      "description": "Fly by light aircraft to Tarangire, famous for its enormous elephant herds and iconic baobab trees. An afternoon game drive reveals the park's extraordinary biodiversity before your first night under canvas.",
+      "image": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=800"
+    },
+    {
+      "day": 3,
+      "location": "Tarangire National Park",
+      "title": "Full Day in Tarangire",
+      "description": "A full day in the park, with morning and afternoon game drives and a bush picnic lunch. Tarangire is one of Tanzania's best-kept secrets — less visited than the Serengeti but often exceeding it for sheer animal density in the dry season.",
+      "image": null
+    },
+    {
+      "day": 4,
+      "location": "Central Serengeti",
+      "title": "Into the Serengeti",
+      "description": "Fly to the central Serengeti and check in to your first camp. An afternoon introduction drive across the golden plains sets the scene for the days ahead. Sundowners on a kopje as the sky turns copper and rose.",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800"
+    },
+    {
+      "day": 5,
+      "location": "Central Serengeti",
+      "title": "Big Cat Focus Day",
+      "description": "Your guide has been tracking three cheetah coalitions and two lion prides. Today we focus on predator behaviour — following up on kills, tracking individual animals, and learning to read the savanna like a naturalist.",
+      "image": null
+    },
+    {
+      "day": 6,
+      "location": "Northern Serengeti",
+      "title": "Flight to the Mara River",
+      "description": "Fly north to the migration camps near the Mara River, the scene of the famous crossings. Arrive in time for an afternoon vigil at the river, waiting for the moment when thousands of wildebeest decide to plunge in.",
+      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800"
+    },
+    {
+      "day": 7,
+      "location": "Northern Serengeti",
+      "title": "The Great Crossing",
+      "description": "A full day at the river. Nothing about the crossing can be predicted — the wildebeest may surge once, twice, or not at all. When it happens, it is one of nature's most overwhelming spectacles: dust, roaring, crocodiles surging, and thousands of animals pouring down the bank.",
+      "image": null
+    },
+    {
+      "day": 8,
+      "location": "Northern Serengeti",
+      "title": "Balloon Safari & Maasai Village",
+      "description": "Pre-dawn departure for your hot air balloon flight, drifting silently above the plains as the migration moves below. A champagne breakfast in the bush follows. Afternoon visit to a partnership Maasai community.",
+      "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=800"
+    },
+    {
+      "day": 9,
+      "location": "Private Conservancy",
+      "title": "Private Conservancy — Game Without Limits",
+      "description": "Transfer to an exclusive private conservancy bordering the Serengeti, where game drives continue after dark and off-road driving is permitted. Evening walking safari with an armed ranger.",
+      "image": null
+    },
+    {
+      "day": 10,
+      "location": "Kilimanjaro Airport",
+      "title": "Farewell to Africa",
+      "description": "A final sunrise game drive before flying back to Arusha and connecting to your onward flights. Guests often describe this last morning light on the savanna as the moment that stays with them longest.",
+      "image": null
+    }
+  ],
+  "accommodations": [
+    {
+      "name": "Tarangire Treetops",
+      "location": "Tarangire",
+      "nights": 2,
+      "category": "Luxury Tree House Lodge",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Singita Grumeti Sabora",
+      "location": "Central Serengeti",
+      "nights": 2,
+      "category": "Luxury Tented Camp",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    },
+    {
+      "name": "Nomad Lamai",
+      "location": "Northern Serengeti",
+      "nights": 3,
+      "category": "Luxury Tented Camp",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Private Conservancy Camp",
+      "location": "Private Conservancy",
+      "nights": 2,
+      "category": "Exclusive Bush Camp",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    }
+  ],
+  "inclusions": [
+    "All internal flights (light aircraft)",
+    "All accommodation as specified",
+    "All meals and beverages",
+    "All game drives with expert guide",
+    "Hot air balloon flight",
+    "Park fees and conservation levies",
+    "Airport transfers",
+    "Pre-departure briefing materials"
+  ],
+  "exclusions": [
+    "International flights",
+    "Travel insurance",
+    "Personal items and souvenirs",
+    "Gratuities (guidance provided)"
+  ],
+  "priceFrom": 18500,
+  "featured": true,
+  "relatedJourneys": ["okavango-fly-camp"],
+  "meta": {
+    "title": "Great Migration Classic — 10-Day Tanzania Safari | Adventure International",
+    "description": "Witness the Great Migration river crossings on our signature 10-day Tanzania itinerary. Expert guides, luxury camps, and unrivaled wildlife access."
+  }
+}

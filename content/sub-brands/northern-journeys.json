@@ -1,0 +1,31 @@
+{
+  "slug": "northern-journeys",
+  "name": "Northern Journeys",
+  "tagline": "Alaska and the Pacific Northwest. Untamed.",
+  "description": "Northern Journeys specialises in wilderness expeditions across Alaska, the Yukon, British Columbia, and the Pacific Northwest — bear watching, glacier trekking, sea kayaking, and Northern Lights experiences in some of North America's last great wild places.",
+  "heroImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1600",
+  "accentColor": "#1a2e1a",
+  "themes": ["Trekking", "Wildlife", "Glamping", "Conservation"],
+  "featuredDestinations": ["norwegian-fjords"],
+  "featuredItineraries": ["patagonia-overland"],
+  "sections": [
+    {
+      "label": "The North",
+      "headline": "Where Wild Still Means Wild",
+      "body": "Alaska and the Pacific Northwest are among the last places on earth where wilderness remains truly wild at scale. Our expeditions venture into landscapes that see fewer visitors each year than many African national parks receive each day.",
+      "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200",
+      "imageAlt": "Northern lights over a fjord"
+    },
+    {
+      "label": "Wildlife",
+      "headline": "Bears, Orcas, Eagles",
+      "body": "The Pacific Northwest supports extraordinary concentrations of large wildlife — grizzly and black bears fishing salmon streams, orca pods hunting coastal waters, bald eagles in numbers that still astonish. Our naturalist guides know these animals as individuals.",
+      "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200",
+      "imageAlt": "Wildlife in the Pacific Northwest wilderness"
+    }
+  ],
+  "meta": {
+    "title": "Northern Journeys | Adventure International",
+    "description": "Wilderness expeditions across Alaska and the Pacific Northwest — bears, glaciers, and Northern Lights."
+  }
+}

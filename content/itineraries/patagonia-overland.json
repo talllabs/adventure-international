@@ -1,0 +1,161 @@
+{
+  "slug": "patagonia-overland",
+  "title": "Patagonia Overland",
+  "subtitle": "Twelve Days Through Chile and Argentina's Wild South",
+  "heroImage": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200",
+    "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200"
+  ],
+  "destinations": ["patagonia-wilderness"],
+  "themes": ["Trekking", "Peaks & Wildlife", "Conservation"],
+  "overview": "A 12-day overland circuit through the best of Chilean and Argentine Patagonia — Torres del Paine, the Perito Moreno Glacier, El Chaltén, and a private estancia stay. This itinerary balances serious trekking with cultural immersion and extraordinary wildlife.",
+  "duration": 12,
+  "groupSize": "4–12 guests",
+  "physicalRating": "Moderate to Challenging",
+  "highlights": [
+    "Trek to the base of the iconic Torres del Paine granite towers",
+    "Walk on Perito Moreno Glacier with crampons",
+    "Search for pumas on guided wildlife drives",
+    "Gaucho experience on a private estancia",
+    "Sea kayaking on glacially-carved fjords"
+  ],
+  "routeMapImage": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800",
+  "days": [
+    {
+      "day": 1,
+      "location": "Punta Arenas, Chile",
+      "title": "Gateway to the South",
+      "description": "Arrive in Punta Arenas, the windswept city at the tip of South America. Transfer to your hotel and evening briefing.",
+      "image": null
+    },
+    {
+      "day": 2,
+      "location": "Torres del Paine",
+      "title": "Enter the Park",
+      "description": "Drive north to Torres del Paine National Park, stopping at the Laguna Amarga checkpoint. First views of the iconic towers take the breath away. Afternoon hike to Mirador Las Torres.",
+      "image": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800"
+    },
+    {
+      "day": 3,
+      "location": "Torres del Paine",
+      "title": "The Valley of the Wind",
+      "description": "Trek the Valle del Francés — a glacial valley flanked by hanging glaciers and towering granite walls, with the constant thunder of ice calving above.",
+      "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800"
+    },
+    {
+      "day": 4,
+      "location": "Torres del Paine",
+      "title": "Puma Territory",
+      "description": "Today is dedicated to wildlife. With our specialist puma guide and spotting scopes, we patrol the southern sections of the park where pumas are regularly habituated to vehicles.",
+      "image": null
+    },
+    {
+      "day": 5,
+      "location": "Torres del Paine",
+      "title": "Grey Glacier",
+      "description": "Trek to Glaciar Grey and take a short boat trip among the icebergs. The glacier calves regularly into Lago Grey, creating a sculptural landscape of drifting ice.",
+      "image": null
+    },
+    {
+      "day": 6,
+      "location": "Puerto Natales",
+      "title": "Rest and Restore",
+      "description": "A rest day in Puerto Natales — visit the excellent regional museum, explore the local market, or choose an optional half-day kayak on the Seno Última Esperanza.",
+      "image": null
+    },
+    {
+      "day": 7,
+      "location": "El Calafate, Argentina",
+      "title": "Cross the Border",
+      "description": "Cross into Argentina and drive to El Calafate on the shores of Lago Argentino. First views of the Southern Patagonian Ice Field on the horizon.",
+      "image": null
+    },
+    {
+      "day": 8,
+      "location": "Perito Moreno Glacier",
+      "title": "On the Ice",
+      "description": "A full day at Perito Moreno — one of the world's few advancing glaciers. First, walk the boardwalk catwalks for panoramic views, then strap on crampons for a 2-hour guided trek across the ancient ice.",
+      "image": "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=800"
+    },
+    {
+      "day": 9,
+      "location": "El Chaltén",
+      "title": "Trekking Capital",
+      "description": "Drive north to El Chaltén, Argentina's trekking capital at the foot of Mount Fitz Roy. Afternoon hike to Laguna de los Tres for the iconic Fitz Roy reflection.",
+      "image": null
+    },
+    {
+      "day": 10,
+      "location": "El Chaltén",
+      "title": "Fitz Roy Circuit",
+      "description": "A longer day hike exploring the forests, moraines, and viewpoints above El Chaltén, with opportunities for condor watching on the thermals.",
+      "image": null
+    },
+    {
+      "day": 11,
+      "location": "Private Estancia",
+      "title": "Life on the Estancia",
+      "description": "Return south to a private estancia — a working Patagonian sheep ranch. Learn from the gauchos, try your hand at horsemanship, and dine on slow-roasted lamb asado under the open sky.",
+      "image": null
+    },
+    {
+      "day": 12,
+      "location": "Punta Arenas",
+      "title": "Journey's End",
+      "description": "Transfer to Punta Arenas for onward flights, carrying the memory of a landscape that redefines one's sense of scale and possibility.",
+      "image": null
+    }
+  ],
+  "accommodations": [
+    {
+      "name": "EcoCamp Patagonia",
+      "location": "Torres del Paine",
+      "nights": 4,
+      "category": "Geodesic Dome Hotel",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Kau Yatun",
+      "location": "El Calafate",
+      "nights": 2,
+      "category": "Boutique Estancia Hotel",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    },
+    {
+      "name": "Eolo",
+      "location": "El Chaltén",
+      "nights": 2,
+      "category": "Luxury Patagonian Lodge",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Estancia Cristina",
+      "location": "Private Estancia",
+      "nights": 1,
+      "category": "Working Estancia",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    }
+  ],
+  "inclusions": [
+    "All accommodation as specified",
+    "All meals",
+    "Glacier trekking equipment and guides",
+    "Park entrance fees",
+    "Ground transport throughout",
+    "All guiding and naturalist services"
+  ],
+  "exclusions": [
+    "International and domestic flights",
+    "Travel insurance",
+    "Personal trekking equipment",
+    "Gratuities"
+  ],
+  "priceFrom": 12500,
+  "featured": true,
+  "relatedJourneys": ["okavango-fly-camp", "great-migration-classic"],
+  "meta": {
+    "title": "Patagonia Overland — 12-Day Chile & Argentina | Adventure International",
+    "description": "A 12-day overland circuit through the best of Patagonia — Torres del Paine, Perito Moreno Glacier, and El Chaltén."
+  }
+}

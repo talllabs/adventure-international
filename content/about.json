@@ -1,0 +1,52 @@
+{
+  "brandStory": {
+    "headline": "Born From a Love of Wild Places",
+    "body": "Adventure International was founded in 1998 by naturalist and explorer Marcus Webb after two decades leading expeditions across Africa, South America, and Southeast Asia. What began as a small operation running bespoke African safaris has grown into a global luxury expedition company — but our guiding principle has never changed: every journey we craft must be exceptional, responsible, and deeply personal.",
+    "image": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=1200"
+  },
+  "expertisePillars": [
+    {
+      "icon": "compass",
+      "title": "Unrivaled Access",
+      "description": "Decades of relationships with private conservancies, local communities, and conservation organizations grant our guests access to places most travelers never see."
+    },
+    {
+      "icon": "shield",
+      "title": "Conservation First",
+      "description": "A portion of every journey funds direct conservation efforts in the destinations we visit. We believe luxury travel should actively protect the wild places it celebrates."
+    },
+    {
+      "icon": "users",
+      "title": "Small Groups Only",
+      "description": "We cap most expeditions at 8–12 guests, ensuring an intimate, personalized experience and minimal environmental footprint."
+    },
+    {
+      "icon": "star",
+      "title": "Extraordinary Expertise",
+      "description": "Every itinerary is designed and guided by specialists with deep field experience — naturalists, climbers, surfers, and cultural experts who are passionate about their regions."
+    }
+  ],
+  "team": [
+    {
+      "name": "Marcus Webb",
+      "role": "Founder & Lead Naturalist",
+      "bio": "Marcus has spent over 30 years leading expeditions across six continents. A trained wildlife biologist and passionate photographer, he designed Adventure International's foundational approach to nature-first travel.",
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
+      "expertise": ["Africa", "Wildlife Biology", "Conservation Photography"]
+    },
+    {
+      "name": "Sofia Reyes",
+      "role": "Director of South American Expeditions",
+      "bio": "Born in Santiago, Chile, Sofia has guided trekkers through Patagonia for 15 years. She leads all Adventure International's South American programs and maintains deep connections with Patagonian conservation trusts.",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400",
+      "expertise": ["Patagonia", "High-Altitude Trekking", "Conservation"]
+    },
+    {
+      "name": "James Ochieng",
+      "role": "Head of East African Operations",
+      "bio": "A third-generation Kenyan guide, James has an encyclopedic knowledge of East African wildlife and ecosystems. He oversees all Kenya, Tanzania, and Uganda programs and personally guides the Great Migration Classic.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400",
+      "expertise": ["Kenya", "Tanzania", "Primatology", "Bird Watching"]
+    }
+  ]
+}

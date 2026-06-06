@@ -1,0 +1,76 @@
+{
+  "slug": "serengeti-migration",
+  "region": "africa",
+  "name": "Serengeti Migration",
+  "country": "Tanzania",
+  "tagline": "Witness the Greatest Wildlife Show on Earth",
+  "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
+    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200",
+    "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200"
+  ],
+  "intro": "The Serengeti is Africa's most iconic wilderness — 30,000 square kilometres of open savanna where over two million wildebeest, zebra, and gazelle make an annual pilgrimage in one of nature's most dramatic spectacles. Beyond the migration, the Serengeti's resident predator populations are among the densest on earth.",
+  "themes": ["Safari", "Big Cats", "Conservation", "Wildlife"],
+  "signatureExperiences": [
+    {
+      "title": "River Crossing Viewings",
+      "description": "Witness wildebeest plunging into the Mara River in a churning, heart-stopping crossing as crocodiles lie in wait. Our guides position you at the best vantage points.",
+      "icon": "waves"
+    },
+    {
+      "title": "Dawn Game Drive",
+      "description": "As the first light breaks over the plains, predators make their final hunts. Our pre-dawn departures put you in position when the action is at its peak.",
+      "icon": "sunrise"
+    },
+    {
+      "title": "Hot Air Balloon Safari",
+      "description": "Drift silently above the endless plains as dawn reveals the scale of the migration below. Touch down for a champagne breakfast in the bush.",
+      "icon": "wind"
+    },
+    {
+      "title": "Big Cat Tracking",
+      "description": "Work with our specialist guides to track lion prides, cheetah families, and elusive leopards resting in fever trees.",
+      "icon": "search"
+    }
+  ],
+  "wildlifeHighlights": [
+    {
+      "species": "African Lion",
+      "bestSeason": "Year-round",
+      "notes": "Serengeti has one of Africa's densest lion populations. Kopjes — rocky outcrops — are favourite resting spots."
+    },
+    {
+      "species": "Wildebeest",
+      "bestSeason": "July–October (crossing), January–March (calving)",
+      "notes": "1.5 million wildebeest participate in the annual migration; calving season in the southern Serengeti is equally spectacular."
+    },
+    {
+      "species": "Cheetah",
+      "bestSeason": "Year-round",
+      "notes": "The open plains make cheetah sightings and hunt observations more reliable here than almost anywhere else in Africa."
+    }
+  ],
+  "sampleItineraries": ["great-migration-classic"],
+  "lodging": [
+    {
+      "name": "Singita Grumeti",
+      "category": "Ultra-Luxury Lodge",
+      "description": "A world-renowned collection of lodges and camps on a private 350,000-acre concession in the western Serengeti corridor.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Nomad Lamai",
+      "category": "Luxury Tented Camp",
+      "description": "Perched on a kopje in the northern Serengeti with commanding views over the Mara River area — prime migration territory.",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    }
+  ],
+  "bestTimeToVisit": "June–October for the river crossings; January–March for calving season in the southern Serengeti",
+  "relatedDestinations": ["okavango-delta", "costa-rica-rainforest"],
+  "relatedJournalArticles": ["gorillas-in-the-mist"],
+  "meta": {
+    "title": "Serengeti Migration Safari | Adventure International",
+    "description": "Witness the greatest wildlife spectacle on earth — the Great Migration across Tanzania's Serengeti. Bespoke luxury safaris with Adventure International."
+  }
+}

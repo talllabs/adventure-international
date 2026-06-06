@@ -1,0 +1,31 @@
+{
+  "slug": "california-journeys",
+  "name": "California Journeys",
+  "tagline": "Wild California. Expertly Guided.",
+  "description": "California Journeys is Adventure International's California-based brand, specialising in surf expeditions, wilderness adventures, and natural history tours across the American West and Baja California Peninsula.",
+  "heroImage": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600",
+  "accentColor": "#c9a84c",
+  "themes": ["Surf & Turf", "Wildlife", "Family", "Trekking"],
+  "featuredDestinations": ["costa-rica-rainforest"],
+  "featuredItineraries": ["patagonia-overland"],
+  "sections": [
+    {
+      "label": "Our Territory",
+      "headline": "From the Redwoods to Baja",
+      "body": "California Journeys operates across California's extraordinary range of landscapes — from the ancient redwood forests of the north coast to the desert surf breaks of Baja California. Our guides are naturalists and watermen who have spent their lives in these places.",
+      "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200",
+      "imageAlt": "Pacific coast waves at sunset"
+    },
+    {
+      "label": "Surf Culture",
+      "headline": "The Art of Reading Water",
+      "body": "Surfing, for us, is not a sport to be taught but a language to be learned — a way of reading the ocean that opens up access to coastal environments in a completely different way. Our surf expeditions combine wave riding with marine biology, coastal ecology, and cultural history.",
+      "image": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1200",
+      "imageAlt": "Surfer riding a wave on the Pacific coast"
+    }
+  ],
+  "meta": {
+    "title": "California Journeys | Adventure International",
+    "description": "Expert-guided surf and wilderness expeditions across California and Baja California Peninsula."
+  }
+}

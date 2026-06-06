@@ -1,0 +1,75 @@
+{
+  "slug": "himalayan-kingdoms",
+  "region": "asia",
+  "name": "Himalayan Kingdoms",
+  "country": "Nepal & Bhutan",
+  "tagline": "Ancient Cultures Beneath the Roof of the World",
+  "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200",
+    "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200"
+  ],
+  "intro": "The Himalayas are the world's highest mountain range and home to extraordinary cultures that have developed in isolation for centuries. From Nepal's trekking routes past Everest Base Camp to Bhutan's pristine Buddhist kingdoms, this region offers a rare combination of high-altitude adventure and profound cultural immersion.",
+  "themes": ["Trekking", "Peaks & Wildlife", "Conservation"],
+  "signatureExperiences": [
+    {
+      "title": "Everest Base Camp Trek",
+      "description": "The classic trek to 5,364m through the heart of the Khumbu, visiting Sherpa villages, monasteries, and glaciers beneath the world's highest summit.",
+      "icon": "mountain"
+    },
+    {
+      "title": "Bhutan Festival Circuit",
+      "description": "Time your visit to coincide with one of Bhutan's spectacular Tsechu festivals — masked dances performed by monks in ancient dzongs.",
+      "icon": "star"
+    },
+    {
+      "title": "Snow Leopard Tracking",
+      "description": "With specialist trackers in Nepal's Dolpo region or Bhutan's high valleys, search for one of the world's most elusive big cats.",
+      "icon": "search"
+    },
+    {
+      "title": "Monastery Stays",
+      "description": "Spend nights in remote Bhutanese monasteries, participate in morning prayers, and learn about centuries-old Buddhist traditions.",
+      "icon": "home"
+    }
+  ],
+  "wildlifeHighlights": [
+    {
+      "species": "Snow Leopard",
+      "bestSeason": "November–February",
+      "notes": "Descends to lower elevations in winter following its prey. Specialist trackers essential; encounters never guaranteed."
+    },
+    {
+      "species": "Red Panda",
+      "bestSeason": "October–April",
+      "notes": "Found in temperate forests between 2,200–4,800m; Bhutan's east is particularly reliable."
+    },
+    {
+      "species": "Black-Necked Crane",
+      "bestSeason": "November–March",
+      "notes": "Bhutan's Phobjikha Valley is the wintering ground for this sacred bird; their arrival is celebrated with a festival."
+    }
+  ],
+  "sampleItineraries": [],
+  "lodging": [
+    {
+      "name": "Amankora",
+      "category": "Luxury Lodge Network",
+      "description": "Five lodges across Bhutan's most magnificent valleys, combining traditional Bhutanese architecture with Aman's signature minimalist luxury.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Yeti Mountain Home",
+      "category": "Himalayan Boutique Lodge",
+      "description": "A collection of authentic stone lodges along the Everest trail, offering the warmth of Sherpa hospitality with hot showers and excellent food.",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    }
+  ],
+  "bestTimeToVisit": "March–May and October–November for trekking; November–March for snow leopard and winter festivals",
+  "relatedDestinations": ["norwegian-fjords", "okavango-delta"],
+  "relatedJournalArticles": [],
+  "meta": {
+    "title": "Himalayan Kingdoms Expeditions | Adventure International",
+    "description": "Trek through Nepal and Bhutan's extraordinary Himalayan landscapes. Expert-guided expeditions combining high-altitude adventure and cultural immersion."
+  }
+}

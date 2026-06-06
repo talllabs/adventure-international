@@ -1,0 +1,126 @@
+{
+  "slug": "okavango-fly-camp",
+  "title": "Okavango Fly-Camp",
+  "subtitle": "Eight Days in Africa's Last Eden",
+  "heroImage": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
+    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200"
+  ],
+  "destinations": ["okavango-delta"],
+  "themes": ["Safari", "Conservation", "Glamping"],
+  "overview": "An immersive fly-in safari into the heart of the Okavango Delta, combining luxury tented camps with remote mobile camping on Chief's Island and the Moremi Game Reserve. This itinerary gets you away from any crowds into Botswana's most pristine wilderness.",
+  "duration": 8,
+  "groupSize": "2–6 guests",
+  "physicalRating": "Moderate",
+  "highlights": [
+    "Mokoro excursion through papyrus channels at dawn",
+    "Walking safari on Chief's Island with expert tracker",
+    "Two nights in a remote fly-camp under the stars",
+    "Wild dog den visit (seasonal, July–October)",
+    "Sundowners on a hippo-filled lagoon"
+  ],
+  "routeMapImage": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=800",
+  "days": [
+    {
+      "day": 1,
+      "location": "Maun, Botswana",
+      "title": "Arrival in Maun",
+      "description": "Arrive in Maun, gateway to the Okavango Delta. Transfer to your departure point and brief orientation before your light aircraft flight into the delta.",
+      "image": null
+    },
+    {
+      "day": 2,
+      "location": "Chief's Island, Moremi",
+      "title": "Into the Delta",
+      "description": "Fly by light aircraft into a private airstrip in Moremi Game Reserve. Your first game drive begins almost immediately as the aircraft door opens — this is one of Africa's premier wildlife areas.",
+      "image": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=800"
+    },
+    {
+      "day": 3,
+      "location": "Chief's Island",
+      "title": "Mokoro Morning",
+      "description": "Before dawn, slip into mokoro canoes and glide through papyrus-lined channels as the delta wakes. Listen for the plop of hippos, the call of malachite kingfishers, and the distant rumble of elephants in the reeds.",
+      "image": null
+    },
+    {
+      "day": 4,
+      "location": "Remote Fly-Camp",
+      "title": "Into the Wild",
+      "description": "Transfer to a remote fly-camp — simple but beautiful, with bucket showers, a mess tent, and an extraordinary sense of being deep in wild Africa. Walking safari this afternoon with our armed tracker.",
+      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800"
+    },
+    {
+      "day": 5,
+      "location": "Remote Fly-Camp",
+      "title": "Africa at Pace",
+      "description": "A full day of walking and vehicle game drives from the fly-camp, covering different habitats and following the wild dog pack if it is denning nearby.",
+      "image": null
+    },
+    {
+      "day": 6,
+      "location": "Xigera, Inner Delta",
+      "title": "Into the Waterways",
+      "description": "Fly to the inner delta — a landscape of open water, lily-covered lagoons, and palm-studded islands. Here boat activities supplement game drives, and the birdlife is extraordinary.",
+      "image": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800"
+    },
+    {
+      "day": 7,
+      "location": "Xigera, Inner Delta",
+      "title": "Final Full Day",
+      "description": "Your last full day in the delta. A sunset mokoro, a night drive revealing the delta's nocturnal life, and a stargazing session with your guide.",
+      "image": null
+    },
+    {
+      "day": 8,
+      "location": "Maun",
+      "title": "Departure",
+      "description": "Early morning drive before flying back to Maun for your onward connections.",
+      "image": null
+    }
+  ],
+  "accommodations": [
+    {
+      "name": "andBeyond Xaranna",
+      "location": "Chief's Island",
+      "nights": 3,
+      "category": "Luxury Tented Camp",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Remote Fly-Camp",
+      "location": "Moremi Wilderness",
+      "nights": 2,
+      "category": "Mobile Wilderness Camp",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    },
+    {
+      "name": "Xigera Safari Lodge",
+      "location": "Inner Okavango",
+      "nights": 2,
+      "category": "Luxury Lodge",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    }
+  ],
+  "inclusions": [
+    "All flights within Botswana",
+    "All accommodation as specified",
+    "All meals and selected beverages",
+    "All game activities",
+    "Park and reserve fees",
+    "Airport transfers in Maun"
+  ],
+  "exclusions": [
+    "International flights",
+    "Travel insurance",
+    "Personal items",
+    "Gratuities"
+  ],
+  "priceFrom": 14800,
+  "featured": true,
+  "relatedJourneys": ["great-migration-classic", "patagonia-overland"],
+  "meta": {
+    "title": "Okavango Fly-Camp — 8-Day Botswana Safari | Adventure International",
+    "description": "An immersive fly-in safari into the heart of the Okavango Delta, combining luxury camps with remote wilderness experiences."
+  }
+}
