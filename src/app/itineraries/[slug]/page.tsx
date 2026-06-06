@@ -161,27 +161,27 @@ export default async function ItineraryPage({ params }: Props) {
       </div>
 
       {/* Inclusions/Exclusions */}
-      <div className="bg-forest-dark py-16">
+      <div className="bg-[#0a0a0a] py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h3 className="font-serif text-2xl text-ivory mb-6">Included</h3>
+              <h3 className="font-serif text-2xl text-white mb-6">Included</h3>
               <ul className="space-y-3">
                 {itin.inclusions.map((inc) => (
                   <li key={inc} className="flex items-start gap-3">
                     <CheckCircle size={16} className="text-gold flex-shrink-0 mt-0.5" />
-                    <span className="text-ivory/70 text-sm">{inc}</span>
+                    <span className="text-white/70 text-sm">{inc}</span>
                   </li>
                 ))}
               </ul>
             </div>
             <div>
-              <h3 className="font-serif text-2xl text-ivory mb-6">Not Included</h3>
+              <h3 className="font-serif text-2xl text-white mb-6">Not Included</h3>
               <ul className="space-y-3">
                 {itin.exclusions.map((exc) => (
                   <li key={exc} className="flex items-start gap-3">
-                    <XCircle size={16} className="text-ivory/30 flex-shrink-0 mt-0.5" />
-                    <span className="text-ivory/50 text-sm">{exc}</span>
+                    <XCircle size={16} className="text-white/30 flex-shrink-0 mt-0.5" />
+                    <span className="text-white/50 text-sm">{exc}</span>
                   </li>
                 ))}
               </ul>
@@ -203,8 +203,8 @@ export default async function ItineraryPage({ params }: Props) {
                   <div className="relative aspect-video overflow-hidden mb-4">
                     <Image src={r.heroImage} alt={r.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="33vw" />
                   </div>
-                  <h3 className="font-serif text-xl text-forest group-hover:text-gold transition-colors">{r.title}</h3>
-                  <p className="text-charcoal-soft text-sm">{r.duration} days</p>
+                  <h3 className="font-serif text-xl text-white group-hover:text-gold transition-colors">{r.title}</h3>
+                  <p className="text-white/50 text-sm">{r.duration} days</p>
                 </Link>
               ))}
             </div>

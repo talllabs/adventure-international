@@ -51,18 +51,18 @@ export default async function DestinationPage({ params }: Props) {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest-dark/80 via-forest-dark/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16">
-          <nav className="flex items-center gap-2 text-ivory/50 text-xs mb-6">
+          <nav className="flex items-center gap-2 text-white/50 text-xs mb-6">
             <Link href="/destinations" className="hover:text-gold">Destinations</Link>
             <span>/</span>
             <Link href={`/destinations?region=${dest.region}`} className="hover:text-gold capitalize">{dest.region.replace("-", " ")}</Link>
             <span>/</span>
-            <span className="text-ivory">{dest.name}</span>
+            <span className="text-white">{dest.name}</span>
           </nav>
           <Badge variant="forest" className="mb-4">{dest.country}</Badge>
-          <h1 className="font-serif text-5xl md:text-7xl text-ivory font-light mb-4">{dest.name}</h1>
-          <p className="text-ivory/70 text-lg max-w-2xl">{dest.tagline}</p>
+          <h1 className="font-serif text-5xl md:text-7xl text-white font-light mb-4">{dest.name}</h1>
+          <p className="text-white/70 text-lg max-w-2xl">{dest.tagline}</p>
         </div>
       </div>
 
