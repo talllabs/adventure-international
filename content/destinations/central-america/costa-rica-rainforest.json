@@ -1,0 +1,75 @@
+{
+  "slug": "costa-rica-rainforest",
+  "region": "central-america",
+  "name": "Costa Rica Rainforest",
+  "country": "Costa Rica",
+  "tagline": "Biodiversity Hotspot — Where Two Oceans Meet",
+  "heroImage": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200",
+    "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1200"
+  ],
+  "intro": "Costa Rica packs extraordinary biodiversity into a small country — covering less than 0.1% of the Earth's surface, it contains nearly 5% of all known species. From misty cloud forests to Pacific surf breaks and Caribbean mangroves, it offers a stunning combination of wildlife encounters and adventure experiences.",
+  "themes": ["Surf & Turf", "Conservation", "Wildlife", "Family"],
+  "signatureExperiences": [
+    {
+      "title": "Corcovado Expedition",
+      "description": "Venture deep into Corcovado National Park, described by National Geographic as the most biologically intense place on earth.",
+      "icon": "tree"
+    },
+    {
+      "title": "Pacific Surfing",
+      "description": "World-class breaks at Nosara, Santa Teresa, and Pavones suit all levels, with warm water year-round.",
+      "icon": "waves"
+    },
+    {
+      "title": "Night Walk",
+      "description": "After dark, the rainforest transforms. Red-eyed tree frogs, kinkajous, and fer-de-lance snakes emerge in the torch-lit canopy.",
+      "icon": "moon"
+    },
+    {
+      "title": "Turtle Nesting",
+      "description": "Between July and October, olive ridley turtles arrive in mass-nesting events (arribadas) on Pacific beaches — a truly overwhelming spectacle.",
+      "icon": "shell"
+    }
+  ],
+  "wildlifeHighlights": [
+    {
+      "species": "Scarlet Macaw",
+      "bestSeason": "Year-round",
+      "notes": "Once threatened, macaw populations have recovered dramatically and are commonly seen in Carara and Corcovado."
+    },
+    {
+      "species": "Jaguar",
+      "bestSeason": "January–April",
+      "notes": "Corcovado is one of Central America's last jaguar strongholds; patience and expert guidance are essential."
+    },
+    {
+      "species": "Humpback Whale",
+      "bestSeason": "July–October and December–April",
+      "notes": "The waters off the Osa Peninsula are a humpback whale breeding ground, visited by both northern and southern hemisphere populations."
+    }
+  ],
+  "sampleItineraries": [],
+  "lodging": [
+    {
+      "name": "Lapa Rios Lodge",
+      "category": "Eco-Luxury Bungalows",
+      "description": "Perched above the rainforest canopy on the Osa Peninsula, adjacent to a 1,000-acre private nature reserve.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Nayara Springs",
+      "category": "Luxury Villa Resort",
+      "description": "Individual adult-only villas with private volcanic spring pools, adjacent to Arenal Volcano National Park.",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    }
+  ],
+  "bestTimeToVisit": "December–April (dry season on Pacific coast); September–October for turtle nesting",
+  "relatedDestinations": ["serengeti-migration", "patagonia-wilderness"],
+  "relatedJournalArticles": ["surfing-baja-peninsula"],
+  "meta": {
+    "title": "Costa Rica Rainforest Expeditions | Adventure International",
+    "description": "Discover Costa Rica's extraordinary biodiversity — surf the Pacific, explore rainforests, and encounter rare wildlife with Adventure International."
+  }
+}

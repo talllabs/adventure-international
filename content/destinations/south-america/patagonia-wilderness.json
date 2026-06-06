@@ -1,0 +1,75 @@
+{
+  "slug": "patagonia-wilderness",
+  "region": "south-america",
+  "name": "Patagonia Wilderness",
+  "country": "Chile & Argentina",
+  "tagline": "The End of the World, Where Mountains Meet the Sea",
+  "heroImage": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200",
+    "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200"
+  ],
+  "intro": "Patagonia is one of the last truly wild places on earth — a vast, dramatic landscape of jagged granite peaks, ancient glaciers, turquoise lakes, and windswept steppes stretching across the southern tip of South America. It is a land of extremes, where Andean condors soar and pumas stalk the high pampa.",
+  "themes": ["Trekking", "Peaks & Wildlife", "Conservation"],
+  "signatureExperiences": [
+    {
+      "title": "Torres del Paine Circuit",
+      "description": "The legendary W-Trek and full circuit traverse some of the most dramatic mountain scenery on earth, past the iconic granite towers.",
+      "icon": "mountain"
+    },
+    {
+      "title": "Glacier Trekking",
+      "description": "Walk on the ancient ice of Grey Glacier or Perito Moreno with expert crampons and guides, surrounded by electric-blue seracs.",
+      "icon": "layers"
+    },
+    {
+      "title": "Condor Spotting",
+      "description": "The Andean condor, with a wingspan of over 3 metres, is a regular presence in Patagonia's thermals. Learn to identify individuals.",
+      "icon": "wind"
+    },
+    {
+      "title": "Estancia Life",
+      "description": "Experience traditional Patagonian ranch life on a private estancia — gaucho horsemanship, asado dinners, and stargazing under pristine skies.",
+      "icon": "home"
+    }
+  ],
+  "wildlifeHighlights": [
+    {
+      "species": "Andean Condor",
+      "bestSeason": "October–March",
+      "notes": "Often seen soaring on thermals above the park's higher elevations, particularly near Lago Nordenskjöld."
+    },
+    {
+      "species": "Puma",
+      "bestSeason": "August–November",
+      "notes": "Chilean Patagonia has seen remarkable puma habituation in recent years; sightings are increasingly reliable with expert guides."
+    },
+    {
+      "species": "Huemul",
+      "bestSeason": "Year-round",
+      "notes": "This critically endangered South Andean deer appears on Chile's coat of arms and is occasionally spotted in remote valleys."
+    }
+  ],
+  "sampleItineraries": ["patagonia-overland"],
+  "lodging": [
+    {
+      "name": "EcoCamp Patagonia",
+      "category": "Eco-Luxury Geodesic Domes",
+      "description": "The world's first geodesic hotel, located inside Torres del Paine with 360-degree views of the iconic towers.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Awasi Patagonia",
+      "category": "Private Villa Lodge",
+      "description": "Individual villas with dedicated guides and private 4x4 vehicles, on a private lakeside estate near Torres del Paine.",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    }
+  ],
+  "bestTimeToVisit": "October–April (Austral summer) for trekking; August–September for puma sightings",
+  "relatedDestinations": ["costa-rica-rainforest", "norwegian-fjords"],
+  "relatedJournalArticles": [],
+  "meta": {
+    "title": "Patagonia Wilderness Expeditions | Adventure International",
+    "description": "Trek through the dramatic wilderness of Chilean and Argentine Patagonia. Luxury trekking expeditions with Adventure International."
+  }
+}

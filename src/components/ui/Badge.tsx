@@ -1,0 +1,29 @@
+import { cn } from "@/lib/utils";
+
+type BadgeVariant = "gold" | "forest" | "ivory";
+
+const variants: Record<BadgeVariant, string> = {
+  gold: "bg-gold/20 text-gold border border-gold/30",
+  forest: "bg-forest text-ivory border border-forest-light",
+  ivory: "bg-ivory text-charcoal border border-ivory-deep",
+};
+
+interface BadgeProps {
+  variant?: BadgeVariant;
+  className?: string;
+  children: React.ReactNode;
+}
+
+export function Badge({ variant = "gold", className, children }: BadgeProps) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center px-3 py-1 text-xs tracking-widest uppercase font-sans",
+        variants[variant],
+        className
+      )}
+    >
+      {children}
+    </span>
+  );
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "norwegian-fjords",
+  "region": "europe",
+  "name": "Norwegian Fjords",
+  "country": "Norway",
+  "tagline": "Northern Lights, Ancient Ice, and Viking Wilderness",
+  "heroImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1600",
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=1200",
+    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200"
+  ],
+  "intro": "Norway's fjords are among Europe's most dramatic landscapes — deep-cut glacial valleys filled with impossibly blue water, flanked by cliffs that plunge thousands of metres from snowcapped plateau to sea level. Above the Arctic Circle, the Northern Lights paint the night sky and the midnight sun bathes the landscape in perpetual gold.",
+  "themes": ["Glamping", "Peaks & Wildlife", "Family"],
+  "signatureExperiences": [
+    {
+      "title": "Northern Lights Chase",
+      "description": "Our expert aurora guides track geomagnetic activity and cloud cover, positioning you for optimal viewing from remote fjordside locations.",
+      "icon": "star"
+    },
+    {
+      "title": "Fjord Kayaking",
+      "description": "Paddle through the mirror-calm waters of the Nærøyfjord or Geirangerfjord at dawn, with only the sound of waterfalls breaking the silence.",
+      "icon": "boat"
+    },
+    {
+      "title": "Reindeer Herding with Sami",
+      "description": "Spend time with Indigenous Sami reindeer herders in Finnmark, learning about their ancient relationship with this extraordinary animal.",
+      "icon": "users"
+    },
+    {
+      "title": "Glacier Walk",
+      "description": "Hike across the Jostedalsbreen ice cap, Europe's largest mainland glacier, with certified mountain guides.",
+      "icon": "layers"
+    }
+  ],
+  "wildlifeHighlights": [
+    {
+      "species": "Orca",
+      "bestSeason": "November–January",
+      "notes": "Orca pods follow herring into Norwegian fjords each winter; boat expeditions offer extraordinary close encounters."
+    },
+    {
+      "species": "Arctic Fox",
+      "bestSeason": "November–March",
+      "notes": "In white winter coat, arctic foxes are seen in Svalbard and Finnmark's snow-covered tundra."
+    },
+    {
+      "species": "White-Tailed Eagle",
+      "bestSeason": "Year-round",
+      "notes": "Europe's largest eagle nests along the Norwegian coastline in impressive numbers; fjord boat trips frequently yield sightings."
+    }
+  ],
+  "sampleItineraries": [],
+  "lodging": [
+    {
+      "name": "Juvet Landscape Hotel",
+      "category": "Design Hotel",
+      "description": "Individual glass-walled pavilions perched above the river Valldøla, offering an intimate connection to the surrounding nature.",
+      "image": "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=800"
+    },
+    {
+      "name": "Svart",
+      "category": "Arctic Wilderness Retreat",
+      "description": "The world's first energy-positive hotel, on a glacier-carved mountain above the Holandsfjord, designed in collaboration with local Sami communities.",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800"
+    }
+  ],
+  "bestTimeToVisit": "November–February for Northern Lights; June–August for midnight sun and kayaking",
+  "relatedDestinations": ["himalayan-kingdoms", "patagonia-wilderness"],
+  "relatedJournalArticles": [],
+  "meta": {
+    "title": "Norwegian Fjords Expeditions | Adventure International",
+    "description": "Explore Norway's extraordinary fjords — Northern Lights, kayaking, glaciers, and Sami culture with Adventure International."
+  }
+}
