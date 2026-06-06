@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const mdxComponents = {
   PullQuote: ({ children }: { children: ReactNode }) => (
-    <div className="my-10 py-6 px-8 border-l-4 border-gold text-2xl font-serif text-forest italic leading-relaxed">
+    <div className="my-10 py-6 px-8 border-l-4 border-gold text-2xl font-serif text-white italic leading-relaxed">
       {children}
     </div>
   ),
@@ -40,13 +40,13 @@ const mdxComponents = {
     </blockquote>
   ),
   h2: ({ children }: { children: ReactNode }) => (
-    <h2 className="font-serif text-3xl text-forest mt-10 mb-4 font-light">{children}</h2>
+    <h2 className="font-serif text-3xl text-white mt-10 mb-4 font-light">{children}</h2>
   ),
   h3: ({ children }: { children: ReactNode }) => (
-    <h3 className="font-serif text-2xl text-forest mt-8 mb-3 font-light">{children}</h3>
+    <h3 className="font-serif text-2xl text-white mt-8 mb-3 font-light">{children}</h3>
   ),
   p: ({ children }: { children: ReactNode }) => (
-    <p className="text-charcoal-soft leading-relaxed mb-5 text-lg">{children}</p>
+    <p className="text-white/70 leading-relaxed mb-5 text-lg">{children}</p>
   ),
 };
 
@@ -77,14 +77,14 @@ export default async function JournalArticlePage({ params }: Props) {
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-forest-dark/90 via-forest-dark/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
         <div className="absolute inset-0 flex flex-col justify-end p-8 md:p-16 pt-32">
           <div className="flex flex-wrap gap-2 mb-4">
             {frontmatter.themes.map((theme) => (
               <Badge key={theme} variant="gold">{theme}</Badge>
             ))}
           </div>
-          <h1 className="font-serif text-4xl md:text-6xl text-ivory font-light mb-3 max-w-4xl">
+          <h1 className="font-serif text-4xl md:text-6xl text-white font-light mb-3 max-w-4xl">
             {frontmatter.title}
           </h1>
           <p className="text-ivory/70 text-lg mb-6 max-w-2xl">{frontmatter.subtitle}</p>
@@ -103,9 +103,9 @@ export default async function JournalArticlePage({ params }: Props) {
 
       {/* Related */}
       {related.length > 0 && (
-        <div className="bg-ivory-warm py-20">
+        <div className="bg-[#111111] py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <SectionLabel className="mb-10">More from the Journal</SectionLabel>
+            <SectionLabel className="mb-10" light>More from the Journal</SectionLabel>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {related.map((a) => (
                 <JournalCard key={a.slug} article={a} />
