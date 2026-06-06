@@ -10,12 +10,12 @@ interface FeaturedDestinationsProps {
 
 export function FeaturedDestinations({ destinations }: FeaturedDestinationsProps) {
   return (
-    <section className="py-24 bg-ivory-warm">
+    <section className="py-24 bg-[#111111]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
           <div>
             <SectionLabel className="mb-4">Destinations</SectionLabel>
-            <h2 className="font-serif text-4xl md:text-5xl text-forest font-light">
+            <h2 className="font-serif text-4xl md:text-5xl text-white font-light">
               Extraordinary Places
             </h2>
           </div>

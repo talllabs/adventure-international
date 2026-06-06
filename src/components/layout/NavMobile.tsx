@@ -20,13 +20,13 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: "100%" }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="fixed inset-0 z-50 bg-forest-dark flex flex-col"
+          className="fixed inset-0 z-50 bg-[#0a0a0a] flex flex-col"
         >
-          <div className="flex items-center justify-between px-6 py-5 border-b border-forest-light">
+          <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
             <Link href="/" onClick={onClose}>
-              <span className="font-serif text-ivory text-xl">Adventure International</span>
+              <span className="font-serif text-white text-xl">Adventure International</span>
             </Link>
-            <button onClick={onClose} className="text-ivory" aria-label="Close menu">
+            <button onClick={onClose} className="text-white" aria-label="Close menu">
               <X size={24} />
             </button>
           </div>
@@ -37,18 +37,18 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
                 <Link
                   href={link.href}
                   onClick={onClose}
-                  className="block text-2xl font-serif text-ivory hover:text-gold transition-colors mb-3"
+                  className="block text-2xl font-serif text-white hover:text-gold transition-colors mb-3"
                 >
                   {link.label}
                 </Link>
                 {link.children && (
-                  <div className="pl-4 border-l border-forest-light space-y-2">
+                  <div className="pl-4 border-l border-white/10 space-y-2">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}
                         href={child.href}
                         onClick={onClose}
-                        className="block text-ivory/60 hover:text-gold text-sm tracking-wide transition-colors"
+                        className="block text-white/60 hover:text-gold text-sm tracking-wide transition-colors"
                       >
                         {child.label}
                       </Link>
@@ -59,7 +59,7 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
             ))}
           </nav>
 
-          <div className="px-6 py-6 border-t border-forest-light">
+          <div className="px-6 py-6 border-t border-white/10">
             <Button href="/contact" variant="primary" className="w-full justify-center" onClick={onClose}>
               Plan Your Journey
             </Button>

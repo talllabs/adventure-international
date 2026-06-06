@@ -28,14 +28,14 @@ interface SelectProps extends BaseProps {
 type FormFieldProps = InputProps | TextareaProps | SelectProps;
 
 const inputBase =
-  "w-full border border-charcoal/20 bg-transparent px-4 py-3 text-charcoal placeholder-charcoal/40 focus:outline-none focus:border-gold transition-colors text-sm";
+  "w-full border border-charcoal/20 bg-transparent px-4 py-3 text-white placeholder-charcoal/40 focus:outline-none focus:border-gold transition-colors text-sm";
 
 export function FormField(props: FormFieldProps) {
   const { label, error, className } = props;
 
   return (
     <div className={cn("", className)}>
-      <label className="block text-xs tracking-widest uppercase text-charcoal-soft mb-2">
+      <label className="block text-xs tracking-widest uppercase text-white/60 mb-2">
         {label}
       </label>
       {(!props.type || props.type === "input") && (

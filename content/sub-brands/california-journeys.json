@@ -3,17 +3,26 @@
   "name": "California Journeys",
   "tagline": "Wild California. Expertly Guided.",
   "description": "California Journeys is Adventure International's California-based brand, specialising in surf expeditions, wilderness adventures, and natural history tours across the American West and Baja California Peninsula.",
-  "heroImage": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200",
   "accentColor": "#c9a84c",
-  "themes": ["Surf & Turf", "Wildlife", "Family", "Trekking"],
-  "featuredDestinations": ["costa-rica-rainforest"],
-  "featuredItineraries": ["patagonia-overland"],
+  "themes": [
+    "Surf & Turf",
+    "Wildlife",
+    "Family",
+    "Trekking"
+  ],
+  "featuredDestinations": [
+    "costa-rica-rainforest"
+  ],
+  "featuredItineraries": [
+    "patagonia-overland"
+  ],
   "sections": [
     {
       "label": "Our Territory",
       "headline": "From the Redwoods to Baja",
       "body": "California Journeys operates across California's extraordinary range of landscapes — from the ancient redwood forests of the north coast to the desert surf breaks of Baja California. Our guides are naturalists and watermen who have spent their lives in these places.",
-      "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200",
       "imageAlt": "Pacific coast waves at sunset"
     },
     {

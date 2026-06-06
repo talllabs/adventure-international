@@ -2,13 +2,18 @@
   "slug": "okavango-fly-camp",
   "title": "Okavango Fly-Camp",
   "subtitle": "Eight Days in Africa's Last Eden",
-  "heroImage": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
-    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200"
+    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200"
   ],
-  "destinations": ["okavango-delta"],
-  "themes": ["Safari", "Conservation", "Glamping"],
+  "destinations": [
+    "okavango-delta"
+  ],
+  "themes": [
+    "Safari",
+    "Conservation",
+    "Glamping"
+  ],
   "overview": "An immersive fly-in safari into the heart of the Okavango Delta, combining luxury tented camps with remote mobile camping on Chief's Island and the Moremi Game Reserve. This itinerary gets you away from any crowds into Botswana's most pristine wilderness.",
   "duration": 8,
   "groupSize": "2–6 guests",
@@ -20,7 +25,7 @@
     "Wild dog den visit (seasonal, July–October)",
     "Sundowners on a hippo-filled lagoon"
   ],
-  "routeMapImage": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=800",
+  "routeMapImage": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800",
   "days": [
     {
       "day": 1,
@@ -34,7 +39,7 @@
       "location": "Chief's Island, Moremi",
       "title": "Into the Delta",
       "description": "Fly by light aircraft into a private airstrip in Moremi Game Reserve. Your first game drive begins almost immediately as the aircraft door opens — this is one of Africa's premier wildlife areas.",
-      "image": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=800"
+      "image": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=800"
     },
     {
       "day": 3,
@@ -118,7 +123,10 @@
   ],
   "priceFrom": 14800,
   "featured": true,
-  "relatedJourneys": ["great-migration-classic", "patagonia-overland"],
+  "relatedJourneys": [
+    "great-migration-classic",
+    "patagonia-overland"
+  ],
   "meta": {
     "title": "Okavango Fly-Camp — 8-Day Botswana Safari | Adventure International",
     "description": "An immersive fly-in safari into the heart of the Okavango Delta, combining luxury camps with remote wilderness experiences."

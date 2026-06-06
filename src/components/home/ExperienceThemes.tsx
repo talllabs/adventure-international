@@ -6,7 +6,7 @@ interface ExperienceThemesProps {
 
 export function ExperienceThemes({ themes }: ExperienceThemesProps) {
   return (
-    <section className="bg-forest py-12">
+    <section className="bg-[#111111] py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap gap-3 justify-center">
           {themes.map((theme) => (

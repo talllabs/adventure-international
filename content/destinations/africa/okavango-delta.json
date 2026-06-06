@@ -4,13 +4,17 @@
   "name": "Okavango Delta",
   "country": "Botswana",
   "tagline": "Africa's Eden — An Inland Delta Teeming With Life",
-  "heroImage": "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
-    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200"
+    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200"
   ],
   "intro": "The Okavango Delta is one of Africa's great wonders — a vast inland delta where the Okavango River fans out across the Kalahari desert, creating a lush mosaic of channels, lagoons, and islands that support extraordinary biodiversity. There are no fences here; wildlife roams freely across pristine wilderness.",
-  "themes": ["Safari", "Conservation", "Wildlife", "Glamping"],
+  "themes": [
+    "Safari",
+    "Conservation",
+    "Wildlife",
+    "Glamping"
+  ],
   "signatureExperiences": [
     {
       "title": "Mokoro Excursions",
@@ -50,7 +54,9 @@
       "notes": "This semi-aquatic antelope is found almost exclusively in swamp habitats and is a delta speciality."
     }
   ],
-  "sampleItineraries": ["okavango-fly-camp"],
+  "sampleItineraries": [
+    "okavango-fly-camp"
+  ],
   "lodging": [
     {
       "name": "andBeyond Xaranna",
@@ -66,8 +72,13 @@
     }
   ],
   "bestTimeToVisit": "May–October (dry season) for best wildlife concentration and water levels for mokoro",
-  "relatedDestinations": ["serengeti-migration", "himalayan-kingdoms"],
-  "relatedJournalArticles": ["wild-heart-of-botswana"],
+  "relatedDestinations": [
+    "serengeti-migration",
+    "himalayan-kingdoms"
+  ],
+  "relatedJournalArticles": [
+    "wild-heart-of-botswana"
+  ],
   "meta": {
     "title": "Okavango Delta Safari | Adventure International",
     "description": "Explore Africa's jewel — the Okavango Delta in Botswana. Mokoro excursions, walking safaris, and extraordinary wildlife with Adventure International."

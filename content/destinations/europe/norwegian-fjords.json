@@ -4,13 +4,16 @@
   "name": "Norwegian Fjords",
   "country": "Norway",
   "tagline": "Northern Lights, Ancient Ice, and Viking Wilderness",
-  "heroImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1513519245088-0e12902e35a6?w=1200",
-    "https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1200"
+    "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200"
   ],
   "intro": "Norway's fjords are among Europe's most dramatic landscapes — deep-cut glacial valleys filled with impossibly blue water, flanked by cliffs that plunge thousands of metres from snowcapped plateau to sea level. Above the Arctic Circle, the Northern Lights paint the night sky and the midnight sun bathes the landscape in perpetual gold.",
-  "themes": ["Glamping", "Peaks & Wildlife", "Family"],
+  "themes": [
+    "Glamping",
+    "Peaks & Wildlife",
+    "Family"
+  ],
   "signatureExperiences": [
     {
       "title": "Northern Lights Chase",
@@ -66,7 +69,10 @@
     }
   ],
   "bestTimeToVisit": "November–February for Northern Lights; June–August for midnight sun and kayaking",
-  "relatedDestinations": ["himalayan-kingdoms", "patagonia-wilderness"],
+  "relatedDestinations": [
+    "himalayan-kingdoms",
+    "patagonia-wilderness"
+  ],
   "relatedJournalArticles": [],
   "meta": {
     "title": "Norwegian Fjords Expeditions | Adventure International",

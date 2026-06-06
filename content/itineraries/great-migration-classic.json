@@ -2,15 +2,18 @@
   "slug": "great-migration-classic",
   "title": "The Great Migration Classic",
   "subtitle": "Ten Days in the Heart of the Serengeti",
-  "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=1200",
-    "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200",
-    "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200",
-    "https://images.unsplash.com/photo-1559127452-dba4a0c88c52?w=1200"
+    "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=1200"
   ],
-  "destinations": ["serengeti-migration"],
-  "themes": ["Safari", "Big Cats", "Conservation"],
+  "destinations": [
+    "serengeti-migration"
+  ],
+  "themes": [
+    "Safari",
+    "Big Cats",
+    "Conservation"
+  ],
   "overview": "The Great Migration Classic is our signature East African expedition — a carefully choreographed 10-day journey through Tanzania's greatest wilderness areas, timed to coincide with the wildebeest migration and designed for guests who want an exceptional safari without compromise.",
   "duration": 10,
   "groupSize": "2–8 guests",
@@ -143,7 +146,9 @@
   ],
   "priceFrom": 18500,
   "featured": true,
-  "relatedJourneys": ["okavango-fly-camp"],
+  "relatedJourneys": [
+    "okavango-fly-camp"
+  ],
   "meta": {
     "title": "Great Migration Classic — 10-Day Tanzania Safari | Adventure International",
     "description": "Witness the Great Migration river crossings on our signature 10-day Tanzania itinerary. Expert guides, luxury camps, and unrivaled wildlife access."

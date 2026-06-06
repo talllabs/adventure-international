@@ -5,15 +5,15 @@
   --font-serif: var(--font-serif);
   --font-sans: var(--font-sans);
 
-  /* Colors — forest */
-  --color-forest: #1a2e1a;
-  --color-forest-dark: #0f1a0f;
-  --color-forest-light: #2d4a2d;
+  /* Colors — forest (rebranded to black) */
+  --color-forest: #111111;
+  --color-forest-dark: #0a0a0a;
+  --color-forest-light: #1a1a1a;
 
-  /* Colors — ivory */
-  --color-ivory: #f5f0e8;
-  --color-ivory-warm: #ede5d5;
-  --color-ivory-deep: #d9cfc0;
+  /* Colors — ivory (rebranded to white) */
+  --color-ivory: #ffffff;
+  --color-ivory-warm: #f8f8f8;
+  --color-ivory-deep: #f0f0f0;
 
   /* Colors — gold */
   --color-gold: #c9a84c;
@@ -41,8 +41,8 @@
 }
 
 body {
-  background-color: var(--color-ivory);
-  color: var(--color-charcoal);
+  background-color: var(--color-forest-dark);
+  color: var(--color-ivory);
   font-family: var(--font-sans), system-ui, sans-serif;
 }
 

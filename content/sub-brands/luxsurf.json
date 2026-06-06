@@ -3,24 +3,30 @@
   "name": "Luxsurf",
   "tagline": "The World's Best Waves. Without Compromise.",
   "description": "Luxsurf is Adventure International's premium surf travel brand, delivering access to the world's finest waves — Indonesian perfection, Maldivian atolls, Mexican point breaks, Fijian barrels — combined with exceptional accommodation, expert guiding, and the kind of logistics that take all the stress out of serious surf travel.",
-  "heroImage": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200",
   "accentColor": "#c9a84c",
-  "themes": ["Surf & Turf", "Luxsurf", "Family"],
-  "featuredDestinations": ["costa-rica-rainforest"],
+  "themes": [
+    "Surf & Turf",
+    "Luxsurf",
+    "Family"
+  ],
+  "featuredDestinations": [
+    "costa-rica-rainforest"
+  ],
   "featuredItineraries": [],
   "sections": [
     {
       "label": "The Mission",
       "headline": "Extraordinary Waves, Every Time",
       "body": "We work with the world's best surf forecasters and have established camp at the planet's most consistent breaks. When a swell fires, our guests are in position. When conditions are marginal, our guides know exactly where to go.",
-      "image": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=1200",
+      "image": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200",
       "imageAlt": "Surfer in a barrel wave"
     },
     {
       "label": "The Experience",
       "headline": "More Than Just Surfing",
       "body": "Luxsurf trips are curated experiences that use the surf break as a hub but extend into the culture, cuisine, and landscapes of each destination. We believe the best surf trips are the ones where the waves are memorable but the journey is unforgettable.",
-      "image": "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200",
+      "image": "https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1200",
       "imageAlt": "Luxury surf camp at sunset"
     }
   ],

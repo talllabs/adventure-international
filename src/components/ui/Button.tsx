@@ -19,10 +19,10 @@ type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-gold text-forest-dark font-semibold hover:bg-gold-light transition-colors",
+    "bg-gold text-black font-semibold hover:bg-gold-light transition-colors",
   secondary:
-    "border border-gold text-gold hover:bg-gold hover:text-forest-dark transition-colors",
-  ghost: "text-ivory hover:text-gold transition-colors",
+    "border border-gold text-gold hover:bg-gold hover:text-black transition-colors",
+  ghost: "text-white hover:text-gold transition-colors",
 };
 
 const base = "inline-flex items-center justify-center px-7 py-3 text-sm tracking-widest uppercase font-sans";

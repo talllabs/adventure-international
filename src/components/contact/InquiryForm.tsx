@@ -6,23 +6,29 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { FormField } from "./FormField";
 import { Button } from "@/components/ui/Button";
-import { REGIONS } from "@/lib/constants";
 import { CheckCircle } from "lucide-react";
 
 const schema = z.object({
   firstName: z.string().min(1, "First name required"),
   lastName: z.string().min(1, "Last name required"),
   email: z.string().email("Valid email required"),
+  country: z.string().optional(),
   phone: z.string().optional(),
-  travelDates: z.string().optional(),
-  destinations: z.array(z.string()).optional(),
-  travelers: z.string().optional(),
-  budget: z.string().min(1, "Please select a budget"),
   howDidYouHear: z.string().optional(),
-  message: z.string().min(10, "Please tell us a bit more about your dream journey"),
+  groupSize: z.string().optional(),
+  travelDates: z.string().optional(),
+  areas: z.array(z.string()).optional(),
+  message: z.string().optional(),
 });
 
 type FormData = z.infer<typeof schema>;
+
+const AREAS = [
+  { value: "africa", label: "Africa" },
+  { value: "americas", label: "Americas" },
+  { value: "asia-pacific", label: "Asia and Pacific" },
+  { value: "europe", label: "Europe" },
+];
 
 export function InquiryForm() {
   const [submitted, setSubmitted] = useState(false);
@@ -52,8 +58,8 @@ export function InquiryForm() {
     return (
       <div className="flex flex-col items-center justify-center py-20 text-center">
         <CheckCircle size={48} className="text-gold mb-4" />
-        <h3 className="font-serif text-3xl text-forest mb-3">Thank You</h3>
-        <p className="text-charcoal-soft leading-relaxed max-w-sm">
+        <h3 className="font-serif text-3xl text-white mb-3">Thank You</h3>
+        <p className="text-white/60 leading-relaxed max-w-sm">
           We&apos;ve received your inquiry and one of our expedition specialists will be in touch within 24 hours.
         </p>
       </div>
@@ -74,73 +80,69 @@ export function InquiryForm() {
           inputProps={{ ...register("lastName"), placeholder: "Webb" }}
         />
       </div>
+
       <FormField
         label="Email"
         error={errors.email?.message}
         inputProps={{ ...register("email"), type: "email", placeholder: "james@example.com" }}
       />
-      <FormField
-        label="Phone (optional)"
-        error={errors.phone?.message}
-        inputProps={{ ...register("phone"), type: "tel", placeholder: "+1 555 000 0000" }}
-      />
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <FormField
-          label="Travel Dates (approximate)"
-          error={errors.travelDates?.message}
-          inputProps={{ ...register("travelDates"), placeholder: "July–August 2025" }}
+          label="Country"
+          error={errors.country?.message}
+          inputProps={{ ...register("country"), placeholder: "United States" }}
         />
         <FormField
-          label="Number of Travelers"
-          error={errors.travelers?.message}
-          inputProps={{ ...register("travelers"), placeholder: "2 adults" }}
+          label="Phone"
+          error={errors.phone?.message}
+          inputProps={{ ...register("phone"), type: "tel", placeholder: "+1 555 000 0000" }}
         />
       </div>
 
-      {/* Regions checkboxes */}
+      <FormField
+        label="How did you hear about us?"
+        error={errors.howDidYouHear?.message}
+        inputProps={{ ...register("howDidYouHear"), placeholder: "Friend, social media, search engine..." }}
+      />
+
+      <FormField
+        label="How many people are in your group (including yourself)?"
+        error={errors.groupSize?.message}
+        inputProps={{ ...register("groupSize"), placeholder: "e.g. 2 adults, 1 child" }}
+      />
+
+      <FormField
+        label="When are you planning to travel and for how long?"
+        error={errors.travelDates?.message}
+        inputProps={{ ...register("travelDates"), placeholder: "e.g. July 2025, 2 weeks" }}
+      />
+
+      {/* Areas checkboxes */}
       <div>
-        <p className="text-xs tracking-widest uppercase text-charcoal-soft mb-3">Regions of Interest</p>
-        <div className="grid grid-cols-2 gap-2">
-          {REGIONS.map((r) => (
-            <label key={r.value} className="flex items-center gap-2 cursor-pointer">
+        <p className="text-xs tracking-widest uppercase text-white/60 mb-3">What areas are you interested in visiting?</p>
+        <div className="grid grid-cols-2 gap-3">
+          {AREAS.map((area) => (
+            <label key={area.value} className="flex items-center gap-2 cursor-pointer">
               <input
                 type="checkbox"
-                value={r.value}
-                {...register("destinations")}
+                value={area.value}
+                {...register("areas")}
                 className="accent-gold"
               />
-              <span className="text-sm text-charcoal-soft">{r.label}</span>
+              <span className="text-sm text-white/70">{area.label}</span>
             </label>
           ))}
         </div>
       </div>
 
       <FormField
-        label="Budget Per Person"
-        type="select"
-        error={errors.budget?.message}
-        options={[
-          { value: "under-10k", label: "Under $10,000" },
-          { value: "10-25k", label: "$10,000 – $25,000" },
-          { value: "25-50k", label: "$25,000 – $50,000" },
-          { value: "50k-plus", label: "$50,000+" },
-        ]}
-        inputProps={{ ...register("budget") }}
-      />
-
-      <FormField
-        label="How Did You Hear About Us?"
-        error={errors.howDidYouHear?.message}
-        inputProps={{ ...register("howDidYouHear"), placeholder: "Friend, social media, search..." }}
-      />
-
-      <FormField
-        label="Tell Us About Your Dream Journey"
+        label="List any other specific info or details"
         type="textarea"
         error={errors.message?.message}
         inputProps={{
           ...register("message"),
-          placeholder: "What kind of experience are you looking for? Any must-see destinations, wildlife, or activities?",
+          placeholder: "Special requirements, specific wildlife, accessibility needs, preferred travel style...",
         }}
       />
 

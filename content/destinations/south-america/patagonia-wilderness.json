@@ -4,13 +4,16 @@
   "name": "Patagonia Wilderness",
   "country": "Chile & Argentina",
   "tagline": "The End of the World, Where Mountains Meet the Sea",
-  "heroImage": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200",
-    "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200"
+    "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200"
   ],
   "intro": "Patagonia is one of the last truly wild places on earth — a vast, dramatic landscape of jagged granite peaks, ancient glaciers, turquoise lakes, and windswept steppes stretching across the southern tip of South America. It is a land of extremes, where Andean condors soar and pumas stalk the high pampa.",
-  "themes": ["Trekking", "Peaks & Wildlife", "Conservation"],
+  "themes": [
+    "Trekking",
+    "Peaks & Wildlife",
+    "Conservation"
+  ],
   "signatureExperiences": [
     {
       "title": "Torres del Paine Circuit",
@@ -50,7 +53,9 @@
       "notes": "This critically endangered South Andean deer appears on Chile's coat of arms and is occasionally spotted in remote valleys."
     }
   ],
-  "sampleItineraries": ["patagonia-overland"],
+  "sampleItineraries": [
+    "patagonia-overland"
+  ],
   "lodging": [
     {
       "name": "EcoCamp Patagonia",
@@ -66,7 +71,10 @@
     }
   ],
   "bestTimeToVisit": "October–April (Austral summer) for trekking; August–September for puma sightings",
-  "relatedDestinations": ["costa-rica-rainforest", "norwegian-fjords"],
+  "relatedDestinations": [
+    "costa-rica-rainforest",
+    "norwegian-fjords"
+  ],
   "relatedJournalArticles": [],
   "meta": {
     "title": "Patagonia Wilderness Expeditions | Adventure International",

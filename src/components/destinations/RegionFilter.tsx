@@ -17,7 +17,7 @@ function RegionFilterInner({ activeRegion }: { activeRegion?: string }) {
   }
 
   return (
-    <div className="bg-ivory border-b border-ivory-deep sticky top-16 z-40">
+    <div className="bg-[#0a0a0a] border-b border-white/10 sticky top-16 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide">
           <button
@@ -25,8 +25,8 @@ function RegionFilterInner({ activeRegion }: { activeRegion?: string }) {
             className={cn(
               "flex-shrink-0 px-5 py-2 text-xs tracking-widest uppercase transition-colors border",
               !activeRegion
-                ? "bg-forest text-ivory border-forest"
-                : "border-charcoal/20 text-charcoal-soft hover:border-gold hover:text-gold"
+                ? "bg-gold text-black border-gold"
+                : "border-white/20 text-white/60 hover:border-gold hover:text-gold"
             )}
           >
             All
@@ -38,8 +38,8 @@ function RegionFilterInner({ activeRegion }: { activeRegion?: string }) {
               className={cn(
                 "flex-shrink-0 px-5 py-2 text-xs tracking-widest uppercase transition-colors border",
                 activeRegion === region.value
-                  ? "bg-forest text-ivory border-forest"
-                  : "border-charcoal/20 text-charcoal-soft hover:border-gold hover:text-gold"
+                  ? "bg-gold text-black border-gold"
+                  : "border-white/20 text-white/60 hover:border-gold hover:text-gold"
               )}
             >
               {region.label}
@@ -53,7 +53,7 @@ function RegionFilterInner({ activeRegion }: { activeRegion?: string }) {
 
 export function RegionFilter({ activeRegion }: { activeRegion?: string }) {
   return (
-    <Suspense fallback={<div className="h-14 bg-ivory border-b border-ivory-deep" />}>
+    <Suspense fallback={<div className="h-14 bg-[#0a0a0a] border-b border-white/10" />}>
       <RegionFilterInner activeRegion={activeRegion} />
     </Suspense>
   );

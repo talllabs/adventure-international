@@ -3,11 +3,20 @@
   "name": "Northern Journeys",
   "tagline": "Alaska and the Pacific Northwest. Untamed.",
   "description": "Northern Journeys specialises in wilderness expeditions across Alaska, the Yukon, British Columbia, and the Pacific Northwest — bear watching, glacier trekking, sea kayaking, and Northern Lights experiences in some of North America's last great wild places.",
-  "heroImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1200",
   "accentColor": "#1a2e1a",
-  "themes": ["Trekking", "Wildlife", "Glamping", "Conservation"],
-  "featuredDestinations": ["norwegian-fjords"],
-  "featuredItineraries": ["patagonia-overland"],
+  "themes": [
+    "Trekking",
+    "Wildlife",
+    "Glamping",
+    "Conservation"
+  ],
+  "featuredDestinations": [
+    "norwegian-fjords"
+  ],
+  "featuredItineraries": [
+    "patagonia-overland"
+  ],
   "sections": [
     {
       "label": "The North",

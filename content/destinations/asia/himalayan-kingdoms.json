@@ -4,13 +4,16 @@
   "name": "Himalayan Kingdoms",
   "country": "Nepal & Bhutan",
   "tagline": "Ancient Cultures Beneath the Roof of the World",
-  "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1600",
+  "heroImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200",
   "galleryImages": [
-    "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200",
-    "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1200"
+    "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200"
   ],
   "intro": "The Himalayas are the world's highest mountain range and home to extraordinary cultures that have developed in isolation for centuries. From Nepal's trekking routes past Everest Base Camp to Bhutan's pristine Buddhist kingdoms, this region offers a rare combination of high-altitude adventure and profound cultural immersion.",
-  "themes": ["Trekking", "Peaks & Wildlife", "Conservation"],
+  "themes": [
+    "Trekking",
+    "Peaks & Wildlife",
+    "Conservation"
+  ],
   "signatureExperiences": [
     {
       "title": "Everest Base Camp Trek",
@@ -66,7 +69,10 @@
     }
   ],
   "bestTimeToVisit": "March–May and October–November for trekking; November–March for snow leopard and winter festivals",
-  "relatedDestinations": ["norwegian-fjords", "okavango-delta"],
+  "relatedDestinations": [
+    "norwegian-fjords",
+    "okavango-delta"
+  ],
   "relatedJournalArticles": [],
   "meta": {
     "title": "Himalayan Kingdoms Expeditions | Adventure International",

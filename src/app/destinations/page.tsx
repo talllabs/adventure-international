@@ -21,12 +21,12 @@ export default async function DestinationsPage({ searchParams }: DestinationsPag
   return (
     <div className="pt-24">
       {/* Hero */}
-      <div className="bg-forest-dark py-20 text-center">
+      <div className="bg-[#0a0a0a] py-20 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <SectionLabel className="justify-center mb-6" light>
             Explore the World
           </SectionLabel>
-          <h1 className="font-serif text-5xl md:text-7xl text-ivory font-light">
+          <h1 className="font-serif text-5xl md:text-7xl text-white font-light">
             Our Destinations
           </h1>
         </div>
@@ -37,7 +37,7 @@ export default async function DestinationsPage({ searchParams }: DestinationsPag
 
       {/* Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <p className="text-charcoal-soft text-sm mb-8">
+        <p className="text-white/60 text-sm mb-8">
           {destinations.length} destination{destinations.length !== 1 ? "s" : ""}
           {region ? ` in ${region.replace("-", " ")}` : ""}
         </p>
@@ -49,7 +49,7 @@ export default async function DestinationsPage({ searchParams }: DestinationsPag
           ))}
         </StaggerChildren>
         {destinations.length === 0 && (
-          <div className="text-center py-20 text-charcoal-soft">
+          <div className="text-center py-20 text-white/60">
             <p className="text-lg">No destinations found for this region.</p>
           </div>
         )}

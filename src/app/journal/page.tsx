@@ -14,16 +14,16 @@ export default function JournalPage() {
 
   return (
     <div className="pt-24">
-      <div className="bg-forest-dark py-20 text-center">
+      <div className="bg-[#0a0a0a] py-20 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <SectionLabel className="justify-center mb-6" light>Stories from the Field</SectionLabel>
-          <h1 className="font-serif text-5xl md:text-7xl text-ivory font-light">Adventure Journal</h1>
+          <h1 className="font-serif text-5xl md:text-7xl text-white font-light">Adventure Journal</h1>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {featured && (
-          <div className="mb-16 pb-16 border-b border-ivory-deep">
+          <div className="mb-16 pb-16 border-b border-white/10">
             <JournalCard article={featured} variant="featured" />
           </div>
         )}
