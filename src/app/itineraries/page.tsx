@@ -14,12 +14,12 @@ export default function ItinerariesPage() {
 
   return (
     <div className="pt-24">
-      <div className="bg-forest-dark py-20 text-center">
+      <div className="bg-[#0a0a0a] py-20 text-center">
         <div className="max-w-3xl mx-auto px-4">
           <SectionLabel className="justify-center mb-6" light>
             Signature Journeys
           </SectionLabel>
-          <h1 className="font-serif text-5xl md:text-7xl text-ivory font-light">
+          <h1 className="font-serif text-5xl md:text-7xl text-white font-light">
             Our Itineraries
           </h1>
         </div>

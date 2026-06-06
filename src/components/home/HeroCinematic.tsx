@@ -33,18 +33,18 @@ export function HeroCinematic({
       </div>
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-forest-dark/80 via-forest-dark/30 to-transparent" />
-      <div className="absolute inset-0 bg-forest-dark/20" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-[#0a0a0a]/20" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <SectionLabel className="justify-center mb-8" light>
           Adventure International
         </SectionLabel>
-        <h1 className="font-serif text-ivory text-5xl md:text-7xl lg:text-8xl font-light leading-none tracking-wide mb-6 max-w-5xl">
+        <h1 className="font-serif text-white text-5xl md:text-7xl lg:text-8xl font-light leading-none tracking-wide mb-6 max-w-5xl">
           {headline}
         </h1>
-        <p className="text-ivory/70 text-sm md:text-base tracking-widest uppercase font-sans mb-10 max-w-xl">
+        <p className="text-white/70 text-sm md:text-base tracking-widest uppercase font-sans mb-10 max-w-xl">
           {subheadline}
         </p>
         <Button href={ctaHref} variant="primary">
@@ -54,7 +54,7 @@ export function HeroCinematic({
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce">
-        <ChevronDown className="text-ivory/60" size={28} />
+        <ChevronDown className="text-white/60" size={28} />
       </div>
     </section>
   );

@@ -35,7 +35,7 @@ const mdxComponents = {
     </div>
   ),
   blockquote: ({ children }: { children: ReactNode }) => (
-    <blockquote className="my-6 pl-6 border-l-4 border-gold italic text-charcoal-soft">
+    <blockquote className="my-6 pl-6 border-l-4 border-gold italic text-white/60">
       {children}
     </blockquote>
   ),
@@ -87,8 +87,8 @@ export default async function JournalArticlePage({ params }: Props) {
           <h1 className="font-serif text-4xl md:text-6xl text-white font-light mb-3 max-w-4xl">
             {frontmatter.title}
           </h1>
-          <p className="text-ivory/70 text-lg mb-6 max-w-2xl">{frontmatter.subtitle}</p>
-          <div className="flex flex-wrap items-center gap-6 text-ivory/50 text-sm">
+          <p className="text-white/70 text-lg mb-6 max-w-2xl">{frontmatter.subtitle}</p>
+          <div className="flex flex-wrap items-center gap-6 text-white/50 text-sm">
             <span className="flex items-center gap-2"><User size={14} />{frontmatter.author}</span>
             <span className="flex items-center gap-2"><Calendar size={14} />{formattedDate}</span>
             <span className="flex items-center gap-2"><Clock size={14} />{frontmatter.readingTime} min read</span>

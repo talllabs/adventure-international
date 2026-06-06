@@ -24,9 +24,9 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
         >
           <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
             <Link href="/" onClick={onClose}>
-              <span className="font-serif text-ivory text-xl">Adventure International</span>
+              <span className="font-serif text-white text-xl">Adventure International</span>
             </Link>
-            <button onClick={onClose} className="text-ivory" aria-label="Close menu">
+            <button onClick={onClose} className="text-white" aria-label="Close menu">
               <X size={24} />
             </button>
           </div>
@@ -37,7 +37,7 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
                 <Link
                   href={link.href}
                   onClick={onClose}
-                  className="block text-2xl font-serif text-ivory hover:text-gold transition-colors mb-3"
+                  className="block text-2xl font-serif text-white hover:text-gold transition-colors mb-3"
                 >
                   {link.label}
                 </Link>
@@ -48,7 +48,7 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
                         key={child.href}
                         href={child.href}
                         onClick={onClose}
-                        className="block text-ivory/60 hover:text-gold text-sm tracking-wide transition-colors"
+                        className="block text-white/60 hover:text-gold text-sm tracking-wide transition-colors"
                       >
                         {child.label}
                       </Link>

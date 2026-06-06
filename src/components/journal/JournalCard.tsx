@@ -36,8 +36,8 @@ export function JournalCard({ article, variant = "standard" }: JournalCardProps)
         <h2 className="font-serif text-3xl md:text-4xl text-white group-hover:text-gold transition-colors mb-3 font-light">
           {article.title}
         </h2>
-        <p className="text-charcoal-soft leading-relaxed mb-4">{article.excerpt}</p>
-        <div className="flex items-center gap-4 text-xs text-charcoal-soft/60">
+        <p className="text-white/60 leading-relaxed mb-4">{article.excerpt}</p>
+        <div className="flex items-center gap-4 text-xs text-white/60/60">
           <span className="flex items-center gap-1"><User size={12} />{article.author}</span>
           <span>{formattedDate}</span>
           <span className="flex items-center gap-1"><Clock size={12} />{article.readingTime} min read</span>
@@ -65,8 +65,8 @@ export function JournalCard({ article, variant = "standard" }: JournalCardProps)
       <h3 className="font-serif text-xl text-white group-hover:text-gold transition-colors mb-2 font-light">
         {article.title}
       </h3>
-      <p className="text-sm text-charcoal-soft line-clamp-2">{article.excerpt}</p>
-      <div className="flex items-center gap-3 text-xs text-charcoal-soft/50 mt-3">
+      <p className="text-sm text-white/60 line-clamp-2">{article.excerpt}</p>
+      <div className="flex items-center gap-3 text-xs text-white/60/50 mt-3">
         <span>{article.author}</span>
         <span>{article.readingTime} min read</span>
       </div>

@@ -38,7 +38,7 @@ export function ItineraryCard({ itinerary }: ItineraryCardProps) {
         <h3 className="font-serif text-xl text-white group-hover:text-gold transition-colors mb-1">
           {itinerary.title}
         </h3>
-        <p className="text-charcoal-soft text-sm">{itinerary.subtitle}</p>
+        <p className="text-white/60 text-sm">{itinerary.subtitle}</p>
         {itinerary.priceFrom && (
           <p className="text-gold text-sm mt-2 font-sans">
             From ${itinerary.priceFrom.toLocaleString()}

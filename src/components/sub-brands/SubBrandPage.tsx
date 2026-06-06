@@ -24,8 +24,8 @@ export function SubBrandPage({ brand }: SubBrandPageProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-          <h1 className="font-serif text-6xl md:text-8xl text-ivory font-light mb-4">{brand.name}</h1>
-          <p className="text-ivory/70 text-base tracking-widest uppercase font-sans max-w-xl">{brand.tagline}</p>
+          <h1 className="font-serif text-6xl md:text-8xl text-white font-light mb-4">{brand.name}</h1>
+          <p className="text-white/70 text-base tracking-widest uppercase font-sans max-w-xl">{brand.tagline}</p>
         </div>
       </div>
 
