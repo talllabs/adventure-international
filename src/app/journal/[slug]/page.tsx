@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug);
   if (!article) return {};
   return {
     title: article.frontmatter.meta.title,
@@ -52,11 +52,11 @@ const mdxComponents = {
 
 export default async function JournalArticlePage({ params }: Props) {
   const { slug } = await params;
-  const article = getArticleBySlug(slug);
+  const article = await getArticleBySlug(slug);
   if (!article) notFound();
 
   const { frontmatter, content } = article;
-  const allArticles = getAllArticles();
+  const allArticles = await getAllArticles();
   const related = allArticles.filter((a) => a.slug !== slug).slice(0, 3);
 
   const formattedDate = new Date(frontmatter.publishedAt).toLocaleDateString("en-US", {

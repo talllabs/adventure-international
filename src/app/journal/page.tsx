@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   description: "Stories, insights, and field notes from our expeditions around the world.",
 };
 
-export default function JournalPage() {
-  const articles = getAllArticles();
+export default async function JournalPage() {
+  const articles = await getAllArticles();
   const [featured, ...rest] = articles;
 
   return (

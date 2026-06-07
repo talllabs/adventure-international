@@ -20,17 +20,17 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const itin = getItineraryBySlug(slug);
+  const itin = await getItineraryBySlug(slug);
   if (!itin) return {};
   return { title: itin.meta.title, description: itin.meta.description };
 }
 
 export default async function ItineraryPage({ params }: Props) {
   const { slug } = await params;
-  const itin = getItineraryBySlug(slug);
+  const itin = await getItineraryBySlug(slug);
   if (!itin) notFound();
 
-  const allItins = getAllItineraries();
+  const allItins = await getAllItineraries();
   const related = itin.relatedJourneys
     .map((s) => allItins.find((i) => i.slug === s))
     .filter(Boolean);

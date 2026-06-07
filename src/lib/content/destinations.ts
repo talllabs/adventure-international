@@ -1,51 +1,74 @@
-import fs from "fs";
-import path from "path";
-import { Destination } from "@/types/destination";
+import { Destination, SignatureExperience } from "@/types/destination";
+import { fetchSheetRange, splitPipe, parseBool } from "@/lib/sheets";
 
-const DESTINATIONS_DIR = path.join(process.cwd(), "content", "destinations");
+// Columns: slug, region, name, country, tagline, heroImage, intro,
+//          themes, bestTimeToVisit, metaTitle, metaDescription, published
+async function fetchDestinations(): Promise<Destination[]> {
+  const [destRows, expRows] = await Promise.all([
+    fetchSheetRange("Destinations!A:L"),
+    fetchSheetRange("Experiences!A:C"),
+  ]);
 
-function readDestinationFile(filePath: string): Destination {
-  const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw) as Destination;
-}
-
-export function getAllDestinations(): Destination[] {
-  const destinations: Destination[] = [];
-  const regions = fs.readdirSync(DESTINATIONS_DIR);
-  for (const region of regions) {
-    const regionPath = path.join(DESTINATIONS_DIR, region);
-    if (!fs.statSync(regionPath).isDirectory()) continue;
-    const files = fs.readdirSync(regionPath).filter((f) => f.endsWith(".json"));
-    for (const file of files) {
-      destinations.push(readDestinationFile(path.join(regionPath, file)));
-    }
+  // Build experiences lookup: destinationSlug → SignatureExperience[]
+  const expMap: Record<string, SignatureExperience[]> = {};
+  for (const [slug, title, description] of expRows) {
+    if (!slug) continue;
+    if (!expMap[slug]) expMap[slug] = [];
+    expMap[slug].push({ title, description, icon: "" });
   }
-  return destinations;
+
+  return destRows
+    .filter(([, , , , , , , , , , , published]) => parseBool(published))
+    .map(([slug, region, name, country, tagline, heroImage, intro, themes, bestTimeToVisit, metaTitle, metaDescription]) => ({
+      slug,
+      region,
+      name,
+      country,
+      tagline,
+      heroImage,
+      galleryImages: [heroImage],
+      intro,
+      themes: splitPipe(themes),
+      signatureExperiences: expMap[slug] ?? [],
+      wildlifeHighlights: [],
+      sampleItineraries: [],
+      lodging: [],
+      bestTimeToVisit,
+      relatedDestinations: [],
+      relatedJournalArticles: [],
+      meta: { title: metaTitle, description: metaDescription },
+    }));
 }
 
-export function getDestinationsByRegion(region: string): Destination[] {
-  return getAllDestinations().filter((d) => d.region === region);
+// Cache within a single request/build cycle
+let _cache: Destination[] | null = null;
+
+async function getAll(): Promise<Destination[]> {
+  if (_cache) return _cache;
+  _cache = await fetchDestinations();
+  return _cache;
 }
 
-export function getDestinationBySlug(
-  region: string,
-  slug: string
-): Destination | null {
-  const filePath = path.join(DESTINATIONS_DIR, region, `${slug}.json`);
-  if (!fs.existsSync(filePath)) return null;
-  return readDestinationFile(filePath);
+export async function getAllDestinations(): Promise<Destination[]> {
+  return getAll();
 }
 
-export function getFeaturedDestinations(slugs: string[]): Destination[] {
-  const all = getAllDestinations();
-  return slugs
-    .map((slug) => all.find((d) => d.slug === slug))
-    .filter(Boolean) as Destination[];
+export async function getDestinationsByRegion(region: string): Promise<Destination[]> {
+  const all = await getAll();
+  return all.filter((d) => d.region === region);
 }
 
-export function generateDestinationStaticParams(): {
-  region: string;
-  slug: string;
-}[] {
-  return getAllDestinations().map((d) => ({ region: d.region, slug: d.slug }));
+export async function getDestinationBySlug(region: string, slug: string): Promise<Destination | null> {
+  const all = await getAll();
+  return all.find((d) => d.region === region && d.slug === slug) ?? null;
+}
+
+export async function getFeaturedDestinations(slugs: string[]): Promise<Destination[]> {
+  const all = await getAll();
+  return slugs.map((s) => all.find((d) => d.slug === s)).filter(Boolean) as Destination[];
+}
+
+export async function generateDestinationStaticParams(): Promise<{ region: string; slug: string }[]> {
+  const all = await getAll();
+  return all.map((d) => ({ region: d.region, slug: d.slug }));
 }

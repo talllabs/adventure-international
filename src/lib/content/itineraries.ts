@@ -1,33 +1,67 @@
-import fs from "fs";
-import path from "path";
 import { Itinerary } from "@/types/itinerary";
+import { fetchSheetRange, splitPipe, parseBool } from "@/lib/sheets";
 
-const ITINERARIES_DIR = path.join(process.cwd(), "content", "itineraries");
+// Columns: slug, title, subtitle, duration, groupSize, physicalRating,
+//          overview, heroImage, priceFrom, themes, destinationSlugs, highlights, published
+async function fetchItineraries(): Promise<Itinerary[]> {
+  const rows = await fetchSheetRange("Itineraries!A:M");
 
-export function getAllItineraries(): Itinerary[] {
-  const files = fs
-    .readdirSync(ITINERARIES_DIR)
-    .filter((f) => f.endsWith(".json"));
-  return files.map((file) => {
-    const raw = fs.readFileSync(path.join(ITINERARIES_DIR, file), "utf-8");
-    return JSON.parse(raw) as Itinerary;
-  });
+  return rows
+    .filter((row) => parseBool(row[12]))
+    .map((row) => {
+      const [slug, title, subtitle, duration, groupSize, physicalRating, overview, heroImage, priceFrom, themes, destinationSlugs, highlights] = row;
+      return {
+        slug,
+        title,
+        subtitle,
+        heroImage,
+        galleryImages: [heroImage],
+        destinations: splitPipe(destinationSlugs),
+        themes: splitPipe(themes),
+        overview,
+        duration: parseInt(duration, 10) || 0,
+        groupSize,
+        physicalRating,
+        highlights: splitPipe(highlights),
+        routeMapImage: "",
+        days: [],
+        accommodations: [],
+        inclusions: [],
+        exclusions: [],
+        priceFrom: parseInt(priceFrom, 10) || 0,
+        featured: true,
+        relatedJourneys: [],
+        meta: {
+          title: `${title} | Adventure International`,
+          description: overview?.slice(0, 160) ?? "",
+        },
+      };
+    });
 }
 
-export function getItineraryBySlug(slug: string): Itinerary | null {
-  const filePath = path.join(ITINERARIES_DIR, `${slug}.json`);
-  if (!fs.existsSync(filePath)) return null;
-  const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw) as Itinerary;
+let _cache: Itinerary[] | null = null;
+
+async function getAll(): Promise<Itinerary[]> {
+  if (_cache) return _cache;
+  _cache = await fetchItineraries();
+  return _cache;
 }
 
-export function getFeaturedItineraries(slugs: string[]): Itinerary[] {
-  const all = getAllItineraries();
-  return slugs
-    .map((slug) => all.find((i) => i.slug === slug))
-    .filter(Boolean) as Itinerary[];
+export async function getAllItineraries(): Promise<Itinerary[]> {
+  return getAll();
 }
 
-export function generateItineraryStaticParams(): { slug: string }[] {
-  return getAllItineraries().map((i) => ({ slug: i.slug }));
+export async function getItineraryBySlug(slug: string): Promise<Itinerary | null> {
+  const all = await getAll();
+  return all.find((i) => i.slug === slug) ?? null;
+}
+
+export async function getFeaturedItineraries(slugs: string[]): Promise<Itinerary[]> {
+  const all = await getAll();
+  return slugs.map((s) => all.find((i) => i.slug === s)).filter(Boolean) as Itinerary[];
+}
+
+export async function generateItineraryStaticParams(): Promise<{ slug: string }[]> {
+  const all = await getAll();
+  return all.map((i) => ({ slug: i.slug }));
 }

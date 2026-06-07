@@ -9,8 +9,8 @@ export const metadata: Metadata = {
   description: "Explore our signature itineraries — expertly crafted journeys to the world's most extraordinary destinations.",
 };
 
-export default function ItinerariesPage() {
-  const itineraries = getAllItineraries();
+export default async function ItinerariesPage() {
+  const itineraries = await getAllItineraries();
 
   return (
     <div className="pt-24">

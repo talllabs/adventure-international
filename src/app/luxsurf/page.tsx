@@ -4,13 +4,13 @@ import { SubBrandPage } from "@/components/sub-brands/SubBrandPage";
 import { notFound } from "next/navigation";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const brand = getSubBrand("luxsurf");
+  const brand = await getSubBrand("luxsurf");
   if (!brand) return {};
   return { title: brand.meta.title, description: brand.meta.description };
 }
 
-export default function LuxsurfPage() {
-  const brand = getSubBrand("luxsurf");
+export default async function LuxsurfPage() {
+  const brand = await getSubBrand("luxsurf");
   if (!brand) notFound();
   return <SubBrandPage brand={brand} />;
 }
