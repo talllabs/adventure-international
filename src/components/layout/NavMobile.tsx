@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { X } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
@@ -12,6 +13,8 @@ interface NavMobileProps {
 }
 
 export function NavMobile({ isOpen, onClose }: NavMobileProps) {
+  const [expandedRegion, setExpandedRegion] = useState<string | null>(null);
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -24,7 +27,11 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
         >
           <div className="flex items-center justify-between px-6 py-5 border-b border-white/10">
             <Link href="/" onClick={onClose}>
-              <span className="font-serif text-white text-xl">Adventure International</span>
+              <img
+                src="https://adventure-international.com/wp-content/uploads/2018/07/ADVENTURE-INTERNATIONAL-logo.svg"
+                alt="Adventure International"
+                className="h-8 w-auto"
+              />
             </Link>
             <button onClick={onClose} className="text-white" aria-label="Close menu">
               <X size={24} />
@@ -42,17 +49,49 @@ export function NavMobile({ isOpen, onClose }: NavMobileProps) {
                   {link.label}
                 </Link>
                 {link.children && (
-                  <div className="pl-4 border-l border-white/10 space-y-2">
-                    {link.children.map((child) => (
-                      <Link
-                        key={child.href}
-                        href={child.href}
-                        onClick={onClose}
-                        className="block text-white/60 hover:text-gold text-sm tracking-wide transition-colors"
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
+                  <div className="pl-4 border-l border-white/10 space-y-1">
+                    {link.children.map((child) => {
+                      const hasCountries = "countries" in child && child.countries?.length;
+                      return (
+                        <div key={child.href}>
+                          <div className="flex items-center justify-between">
+                            <Link
+                              href={child.href}
+                              onClick={onClose}
+                              className="flex-1 text-white/60 hover:text-gold text-sm tracking-wide transition-colors py-1"
+                            >
+                              {child.label}
+                            </Link>
+                            {hasCountries && (
+                              <button
+                                onClick={() => setExpandedRegion(expandedRegion === child.label ? null : child.label)}
+                                className="p-1 text-white/40"
+                                aria-label="Expand"
+                              >
+                                <ChevronDown
+                                  size={14}
+                                  className={`transition-transform ${expandedRegion === child.label ? "rotate-180" : ""}`}
+                                />
+                              </button>
+                            )}
+                          </div>
+                          {hasCountries && expandedRegion === child.label && (
+                            <div className="pl-3 border-l border-gold/20 mt-1 mb-2 space-y-1">
+                              {"countries" in child && child.countries?.map((country) => (
+                                <Link
+                                  key={country.href}
+                                  href={country.href}
+                                  onClick={onClose}
+                                  className="block text-white/40 hover:text-gold text-xs tracking-wide transition-colors py-1"
+                                >
+                                  {country.label}
+                                </Link>
+                              ))}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 )}
               </div>

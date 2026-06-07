@@ -3,32 +3,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import { NavMobile } from "./NavMobile";
-import { Menu } from "lucide-react";
-
-const NAV_LINKS = [
-  {
-    label: "Signature Expeditions",
-    href: "/itineraries",
-  },
-  {
-    label: "Destinations",
-    href: "/destinations",
-    children: [
-      { label: "Africa", href: "/destinations?region=africa" },
-      { label: "Asia", href: "/destinations?region=asia" },
-      { label: "South America", href: "/destinations?region=south-america" },
-      { label: "Central America", href: "/destinations?region=central-america" },
-      { label: "Europe", href: "/destinations?region=europe" },
-    ],
-  },
-  { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "/contact" },
-  { label: "Blog", href: "/journal" },
-];
+import { Menu, ChevronRight } from "lucide-react";
+import { NAV_LINKS } from "@/lib/constants";
 
 export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [activeRegion, setActiveRegion] = useState<string | null>(null);
 
   return (
     <>
@@ -49,8 +30,8 @@ export function Nav() {
               <div
                 key={link.href}
                 className="relative"
-                onMouseEnter={() => link.children && setActiveDropdown(link.label)}
-                onMouseLeave={() => setActiveDropdown(null)}
+                onMouseEnter={() => { link.children && setActiveDropdown(link.label); setActiveRegion(null); }}
+                onMouseLeave={() => { setActiveDropdown(null); setActiveRegion(null); }}
               >
                 <Link
                   href={link.href}
@@ -58,19 +39,49 @@ export function Nav() {
                 >
                   {link.label}
                 </Link>
+
                 {link.children && activeDropdown === link.label && (
-                  <div className="absolute top-full left-0 pt-2 w-56">
-                    <div className="bg-black border border-gold/20 py-2">
+                  <div className="absolute top-full left-0 pt-2 flex">
+                    {/* Region column */}
+                    <div className="bg-black border border-gold/20 py-2 w-52">
                       {link.children.map((child) => (
-                        <Link
+                        <div
                           key={child.href}
-                          href={child.href}
-                          className="block px-4 py-2 text-white/70 hover:text-gold hover:bg-white/5 text-sm transition-colors"
+                          onMouseEnter={() => "countries" in child && child.countries?.length ? setActiveRegion(child.label) : setActiveRegion(null)}
+                          className="flex items-center justify-between"
                         >
-                          {child.label}
-                        </Link>
+                          <Link
+                            href={child.href}
+                            className="flex-1 block px-4 py-2 text-white/70 hover:text-gold hover:bg-white/5 text-sm transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                          {"countries" in child && child.countries?.length ? (
+                            <ChevronRight size={12} className="text-white/30 mr-3" />
+                          ) : null}
+                        </div>
                       ))}
                     </div>
+
+                    {/* Country column */}
+                    {activeRegion && (() => {
+                      const region = link.children?.find((c) => c.label === activeRegion);
+                      const countries = region && "countries" in region ? region.countries : null;
+                      if (!countries?.length) return null;
+                      return (
+                        <div className="bg-black border border-l-0 border-gold/20 py-2 w-52">
+                          {countries.map((country) => (
+                            <Link
+                              key={country.href}
+                              href={country.href}
+                              className="block px-4 py-2 text-white/70 hover:text-gold hover:bg-white/5 text-sm transition-colors"
+                            >
+                              {country.label}
+                            </Link>
+                          ))}
+                        </div>
+                      );
+                    })()}
                   </div>
                 )}
               </div>
