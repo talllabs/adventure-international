@@ -19,13 +19,15 @@ export const metadata: Metadata = {
     "Bespoke luxury expeditions, safaris, trekking, and wilderness journeys across Africa, Asia, South America, and beyond.",
 };
 
-export default function HomePage() {
-  const destinations = getFeaturedDestinations(homepageData.featuredDestinations);
-  const itineraries = getFeaturedItineraries(homepageData.signatureItineraries);
-  const articles = getFeaturedArticles(homepageData.journalPreviews);
-  const subBrands = getAllSubBrands().filter((b) =>
-    homepageData.subBrands.includes(b.slug)
-  );
+export default async function HomePage() {
+  const [destinations, itineraries, articles, allBrands] = await Promise.all([
+    getFeaturedDestinations(homepageData.featuredDestinations),
+    getFeaturedItineraries(homepageData.signatureItineraries),
+    getFeaturedArticles(homepageData.journalPreviews),
+    getAllSubBrands(),
+  ]);
+
+  const subBrands = allBrands.filter((b) => homepageData.subBrands.includes(b.slug));
 
   return (
     <>

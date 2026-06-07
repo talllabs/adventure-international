@@ -1,43 +1,64 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import { JournalFrontmatter, JournalArticle } from "@/types/journal";
+import { fetchSheetRange, splitPipe, parseBool } from "@/lib/sheets";
 
-const JOURNAL_DIR = path.join(process.cwd(), "content", "journal");
+// Columns: slug, title, subtitle, author, publishedAt, heroImage, excerpt,
+//          destinations, themes, readingTime, featured, published
+async function fetchArticles(): Promise<JournalFrontmatter[]> {
+  const rows = await fetchSheetRange("Journal!A:L");
 
-export function getAllArticles(): JournalFrontmatter[] {
-  const files = fs
-    .readdirSync(JOURNAL_DIR)
-    .filter((f) => f.endsWith(".mdx"));
-  const articles = files.map((file) => {
-    const raw = fs.readFileSync(path.join(JOURNAL_DIR, file), "utf-8");
-    const { data } = matter(raw);
-    return data as JournalFrontmatter;
-  });
-  return articles.sort(
-    (a, b) =>
-      new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-  );
+  return rows
+    .filter((row) => parseBool(row[11]))
+    .map((row) => {
+      const [slug, title, subtitle, author, publishedAt, heroImage, excerpt, destinations, themes, readingTime, featured] = row;
+      return {
+        slug,
+        title,
+        subtitle,
+        author,
+        publishedAt,
+        heroImage,
+        excerpt,
+        destinations: splitPipe(destinations),
+        relatedItineraries: [],
+        themes: splitPipe(themes),
+        readingTime: parseInt(readingTime, 10) || 5,
+        featured: parseBool(featured),
+        meta: {
+          title: `${title} | Adventure International Journal`,
+          description: excerpt?.slice(0, 160) ?? "",
+        },
+      };
+    })
+    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 }
 
-export function getArticleBySlug(slug: string): JournalArticle | null {
-  const filePath = path.join(JOURNAL_DIR, `${slug}.mdx`);
-  if (!fs.existsSync(filePath)) return null;
-  const raw = fs.readFileSync(filePath, "utf-8");
-  const { data, content } = matter(raw);
-  return {
-    frontmatter: data as JournalFrontmatter,
-    content,
-  };
+let _cache: JournalFrontmatter[] | null = null;
+
+async function getAll(): Promise<JournalFrontmatter[]> {
+  if (_cache) return _cache;
+  _cache = await fetchArticles();
+  return _cache;
 }
 
-export function getFeaturedArticles(slugs: string[]): JournalFrontmatter[] {
-  const all = getAllArticles();
-  return slugs
-    .map((slug) => all.find((a) => a.slug === slug))
-    .filter(Boolean) as JournalFrontmatter[];
+export async function getAllArticles(): Promise<JournalFrontmatter[]> {
+  return getAll();
 }
 
-export function generateJournalStaticParams(): { slug: string }[] {
-  return getAllArticles().map((a) => ({ slug: a.slug }));
+export async function getArticleBySlug(slug: string): Promise<JournalArticle | null> {
+  const all = await getAll();
+  const frontmatter = all.find((a) => a.slug === slug);
+  if (!frontmatter) return null;
+  // Content body now lives in the sheet's "body" column if added later;
+  // for now return the excerpt as placeholder content
+  return { frontmatter, content: frontmatter.excerpt };
+}
+
+export async function getFeaturedArticles(slugs: string[]): Promise<JournalFrontmatter[]> {
+  const all = await getAll();
+  return slugs.map((s) => all.find((a) => a.slug === s)).filter(Boolean) as JournalFrontmatter[];
+}
+
+export async function generateJournalStaticParams(): Promise<{ slug: string }[]> {
+  const all = await getAll();
+  return all.map((a) => ({ slug: a.slug }));
 }

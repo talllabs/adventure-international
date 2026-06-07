@@ -16,7 +16,7 @@ interface DestinationsPageProps {
 
 export default async function DestinationsPage({ searchParams }: DestinationsPageProps) {
   const { region } = await searchParams;
-  const destinations = region ? getDestinationsByRegion(region) : getAllDestinations();
+  const destinations = await (region ? getDestinationsByRegion(region) : getAllDestinations());
 
   return (
     <div className="pt-24">

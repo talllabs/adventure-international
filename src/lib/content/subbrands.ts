@@ -1,22 +1,46 @@
-import fs from "fs";
-import path from "path";
 import { SubBrand } from "@/types/subbrand";
+import { fetchSheetRange, splitPipe, parseBool } from "@/lib/sheets";
 
-const SUBBRANDS_DIR = path.join(process.cwd(), "content", "sub-brands");
+// Columns: slug, name, tagline, description, heroImage, themes, published
+async function fetchSubBrands(): Promise<SubBrand[]> {
+  const rows = await fetchSheetRange("SubBrands!A:G");
 
-export function getAllSubBrands(): SubBrand[] {
-  const files = fs
-    .readdirSync(SUBBRANDS_DIR)
-    .filter((f) => f.endsWith(".json"));
-  return files.map((file) => {
-    const raw = fs.readFileSync(path.join(SUBBRANDS_DIR, file), "utf-8");
-    return JSON.parse(raw) as SubBrand;
-  });
+  return rows
+    .filter((row) => parseBool(row[6]))
+    .map((row) => {
+      const [slug, name, tagline, description, heroImage, themes] = row;
+      return {
+        slug,
+        name,
+        tagline,
+        description,
+        heroImage,
+        accentColor: "#c9a84c",
+        themes: splitPipe(themes),
+        featuredDestinations: [],
+        featuredItineraries: [],
+        sections: [],
+        meta: {
+          title: `${name} | Adventure International`,
+          description: tagline ?? "",
+        },
+      };
+    });
 }
 
-export function getSubBrand(slug: string): SubBrand | null {
-  const filePath = path.join(SUBBRANDS_DIR, `${slug}.json`);
-  if (!fs.existsSync(filePath)) return null;
-  const raw = fs.readFileSync(filePath, "utf-8");
-  return JSON.parse(raw) as SubBrand;
+let _cache: SubBrand[] | null = null;
+
+async function getAll(): Promise<SubBrand[]> {
+  if (_cache) return _cache;
+  _cache = await fetchSubBrands();
+  return _cache;
+}
+
+export async function getAllSubBrands(): Promise<SubBrand[]> {
+  return getAll();
+}
+
+export async function getSubBrand(slug: string): Promise<SubBrand | null> {
+  const all = await getAll();
+  return all.find((b) => b.slug === slug) ?? null;
 }

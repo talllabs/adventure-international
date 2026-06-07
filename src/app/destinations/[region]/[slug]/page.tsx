@@ -20,21 +20,23 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { region, slug } = await params;
-  const dest = getDestinationBySlug(region, slug);
+  const dest = await getDestinationBySlug(region, slug);
   if (!dest) return {};
   return { title: dest.meta.title, description: dest.meta.description };
 }
 
 export default async function DestinationPage({ params }: Props) {
   const { region, slug } = await params;
-  const dest = getDestinationBySlug(region, slug);
+  const [dest, allDests] = await Promise.all([
+    getDestinationBySlug(region, slug),
+    getAllDestinations(),
+  ]);
   if (!dest) notFound();
 
-  const itineraries = dest.sampleItineraries
-    .map((s) => getItineraryBySlug(s))
-    .filter(Boolean);
+  const itineraries = (
+    await Promise.all(dest.sampleItineraries.map((s) => getItineraryBySlug(s)))
+  ).filter(Boolean);
 
-  const allDests = getAllDestinations();
   const related = dest.relatedDestinations
     .map((s) => allDests.find((d) => d.slug === s))
     .filter(Boolean);
