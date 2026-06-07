@@ -1,3 +1,5 @@
+import fs from "fs";
+import path from "path";
 import { JournalFrontmatter, JournalArticle } from "@/types/journal";
 import { fetchSheetRange, splitPipe, parseBool } from "@/lib/sheets";
 
@@ -48,9 +50,17 @@ export async function getArticleBySlug(slug: string): Promise<JournalArticle | n
   const all = await getAll();
   const frontmatter = all.find((a) => a.slug === slug);
   if (!frontmatter) return null;
-  // Content body now lives in the sheet's "body" column if added later;
-  // for now return the excerpt as placeholder content
-  return { frontmatter, content: frontmatter.excerpt };
+
+  // Read MDX body from content/journal/<slug>.mdx if it exists
+  const mdxPath = path.join(process.cwd(), "content", "journal", `${slug}.mdx`);
+  let content = frontmatter.excerpt;
+  if (fs.existsSync(mdxPath)) {
+    const raw = fs.readFileSync(mdxPath, "utf-8");
+    // Strip frontmatter if present
+    content = raw.replace(/^---[\s\S]*?---\n?/, "").trim();
+  }
+
+  return { frontmatter, content };
 }
 
 export async function getFeaturedArticles(slugs: string[]): Promise<JournalFrontmatter[]> {
